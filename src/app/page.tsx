@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
-
+import logo from "../../public/img/logo.png"
 export default function Home() {
   const teams = [
     {
@@ -50,7 +50,7 @@ export default function Home() {
       <header className="header-section ">
         <div className="container-fluid">
           <a href="index.html" className="site-logo">
-            <Image src="/img/logo.png" alt="" width={116} height={36} />
+            <Image src={logo} alt="" width={116} height={36} />
           </a>
           <div className="responsive-bar">
             <i className="fa fa-bars"></i>
