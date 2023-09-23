@@ -52,8 +52,11 @@ export default function Home() {
 
       <header className="header-section ">
         <div className="container-fluid">
-          <a href="index.html" className="site-logo">
-            <Image src={`${Public_Assests_Url}/zenithialabs.png`} alt="" width={116} height={36} />
+          <a href="index.html" className="site-logo" style={{textDecoration:"none"}}>
+            {/* <Image src="/img/zenithialabs-logos_transparent1.png" alt="" width={116} height={36} /> */}
+            <h2 style={{ color: "#20509e",}}>
+            Zenithialabs
+              </h2>
           </a>
           <div className="responsive-bar">
             <i className="fa fa-bars"></i>
