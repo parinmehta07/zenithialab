@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
 import logo from "../../public/img/logo.png"
+
+const {Public_Assests_Url} = process.env
+
 export default function Home() {
   const teams = [
     {
@@ -50,7 +53,7 @@ export default function Home() {
       <header className="header-section ">
         <div className="container-fluid">
           <a href="index.html" className="site-logo">
-            <Image src={logo} alt="" width={116} height={36} />
+            <Image src={`${Public_Assests_Url}/logo.png`} alt="" width={116} height={36} />
           </a>
           <div className="responsive-bar">
             <i className="fa fa-bars"></i>
@@ -102,7 +105,7 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <Image
-                src="/img/laptop.png"
+                src={"/img/laptop.png"}
                 className="laptop-image"
                 alt=""
                 width={483}
@@ -137,7 +140,7 @@ export default function Home() {
             </div>
           </div>
           <div className="about-img">
-            <Image src="/img/about-img.png" alt="" width={480} height={281} />
+            <Image src={"/img/about-img.png"} alt="" width={480} height={281} />
           </div>
         </div>
       </section>
