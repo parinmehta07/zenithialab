@@ -53,7 +53,7 @@ export default function Home() {
       <header className="header-section ">
         <div className="container-fluid">
           <a href="index.html" className="site-logo">
-            <Image    src={"/img/logo.png"} alt="" width={116} height={36} />
+            <Image src={`${Public_Assests_Url}/logo.png`} alt="" width={116} height={36} />
           </a>
           <div className="responsive-bar">
             <i className="fa fa-bars"></i>
