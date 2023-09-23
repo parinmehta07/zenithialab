@@ -47,36 +47,38 @@ export default function Home() {
 		<div className="loader"></div>
 	</div> */}
 
-<header className="header-section">
-  <div className="container-fluid">
-    <a href="index.html" className="site-logo">
-      <img src="/img/logo.png" alt="" width="116" height="36" />
-    </a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarResponsive">
-      <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
-          <a className="nav-link" href="#">Solution</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">News</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
-
+      <header className="header-section ">
+        <div className="container-fluid">
+          <a href="index.html" className="site-logo">
+            <Image src="/img/logo.png" alt="" width={116} height={36} />
+          </a>
+          <div className="responsive-bar">
+            <i className="fa fa-bars"></i>
+          </div>
+          <a href="" className="user">
+            <i className="fa fa-user"></i>
+          </a>
+          {/* <nav className="main-menu">
+            <ul className="menu-list">
+              <li>
+                <a href="">Solution</a>
+              </li>
+              <li>
+                <a href="">Features</a>
+              </li>
+              <li>
+                <a href="">News</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </nav> */}
+        </div>
+      </header>
 
       {/* hero sec */}
 
