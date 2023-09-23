@@ -4,6 +4,7 @@ const nextConfig = {
     "output": "export",
     images: {
       unoptimized: true,
+      domains: ['s3.ap-south-1.amazonaws.com'],
       remotePatterns: [
         {
           protocol: 'https',
