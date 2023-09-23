@@ -1,6 +1,6 @@
 export default function ContactUs() {
   return (
-    <section className="contact-page  newsletter-section gradient-bg p-4 m-4 ">
+    <section className="contact-page  newsletter-section  p-4 m-4 ">
       <div className="container">
       <div className="container">
       <div className="section-title text-center text-white">

@@ -490,9 +490,9 @@ export default function Home() {
       </section> */}
       {/* <!-- Review section end --> */}
 
-      <footer className="footer-section container-fluid">
+      <footer className="footer-section ">
         <div className="row ">
-          <div className="row  justify-content-center">
+          <div className="  justify-content-center gradient-bg">
             {/* <div className="col-md-6 col-lg-3 footer-widget">
               <Image
                 src="/img/logo.png"
@@ -555,7 +555,7 @@ export default function Home() {
                 </li>
               </ul>
             </div> */}
-            <section className=""></section>
+            
             <ContactUs />
           </div>
           <div className="footer-bottom">
