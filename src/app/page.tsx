@@ -57,16 +57,12 @@ export default function Home() {
             {/* <h2 style={{ color: "#20509e",}}>
             Zenithialabs
               </h2> */}
-                          <Image src="/img/logo-no-background.svg" alt="" width={226} height={76} />
+                          <Image src="/img/logo-no-background.svg" alt="" width={226} height={70} />
 
           </a>
-          <div className="responsive-bar">
-            <i className="fa fa-bars"></i>
-          </div>
-          <a href="" className="user">
-            <i className="fa fa-user"></i>
-          </a>
-          {/* <nav className="main-menu">
+         
+         
+          <nav className="main-menu">
             <ul className="menu-list">
               <li>
                 <a href="">Solution</a>
@@ -84,7 +80,7 @@ export default function Home() {
                 <a href="">Contact</a>
               </li>
             </ul>
-          </nav> */}
+          </nav>
         </div>
       </header>
 
