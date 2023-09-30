@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
 import logo from "../../public/img/logo.png"
+import NAVBAR from "./components/nav-bar";
 
 const {Public_Assests_Url} = process.env
 
@@ -51,37 +52,9 @@ export default function Home() {
 	</div> */}
 
       <header className="header-section ">
-        <div className="container-fluid">
-          <a href="index.html" className="site-logo" style={{textDecoration:"none"}}>
-            {/* <Image src="https://coindcx.com/assets/new-home-pagee/Logo_CoinDCX.svg" alt="" width={156} height={126} /> */}
-            {/* <h2 style={{ color: "#20509e",}}>
-            Zenithialabs
-              </h2> */}
-                          <Image src="/img/logo-no-background.svg" alt="" width={226} height={70} />
-
-          </a>
-         
-         
-          <nav className="main-menu">
-            <ul className="menu-list">
-              <li>
-                <a href="">Solution</a>
-              </li>
-              <li>
-                <a href="">Features</a>
-              </li>
-              <li>
-                <a href="">News</a>
-              </li>
-              <li>
-                <a href="">About</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          
+         <NAVBAR />
+          
       </header>
 
       {/* hero sec */}
