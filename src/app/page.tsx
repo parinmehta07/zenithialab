@@ -53,10 +53,12 @@ export default function Home() {
       <header className="header-section ">
         <div className="container-fluid">
           <a href="index.html" className="site-logo" style={{textDecoration:"none"}}>
-            {/* <Image src="/img/zenithialabs-logos_transparent1.png" alt="" width={116} height={36} /> */}
-            <h2 style={{ color: "#20509e",}}>
+            {/* <Image src="https://coindcx.com/assets/new-home-pagee/Logo_CoinDCX.svg" alt="" width={156} height={126} /> */}
+            {/* <h2 style={{ color: "#20509e",}}>
             Zenithialabs
-              </h2>
+              </h2> */}
+                          <Image src="/img/logo-no-background.svg" alt="" width={226} height={76} />
+
           </a>
           <div className="responsive-bar">
             <i className="fa fa-bars"></i>
