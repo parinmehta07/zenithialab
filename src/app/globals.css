@@ -22,8 +22,7 @@ body {
 	font-family: "Lato", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
-
-	/* font-smoothing: antialiased; */
+	scroll-behavior:smooth;
 }
 
 h1,
@@ -233,20 +232,14 @@ ol {
 -----------------------*/
 
 .header-section {
-	position: absolute;
-	width: 100%;
+	position: fixed;
 	top: 0;
 	z-index: 99;
+	width: 99%;
 }
 
-.header-section .site-btn {
-	float: right;
-	margin-left: 60px;
-}
-
-.header-section .responsive-bar,
-.header-section .user {
-	display: none;
+.navbar-custom {
+	background-color: white;
 }
 
 .main-menu {
@@ -277,7 +270,6 @@ ol {
 .hero-section {
 	padding-top: 160px;
 	display: block;
-	background-image: url("/img/hero-bg.png");
 	background-size: cover;
 	background-color: #f3f7f9;
 	background-position: right top;
@@ -313,7 +305,7 @@ ol {
 
 .hero-subscribe-from {
 	margin-top: 50px;
-	display: block;
+	display: flex;
 }
 
 .hero-subscribe-from input {

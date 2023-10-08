@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
-import logo from "../../public/img/logo.png"
+import logo from "../../public/img/logo.png";
 import NAVBAR from "./components/nav-bar";
 
-const {Public_Assests_Url} = process.env
+const { Public_Assests_Url } = process.env;
 
 export default function Home() {
   const teams = [
@@ -52,9 +52,7 @@ export default function Home() {
 	</div> */}
 
       <header className="header-section ">
-          
-         <NAVBAR />
-          
+        <NAVBAR />
       </header>
 
       {/* hero sec */}
@@ -73,8 +71,7 @@ export default function Home() {
                 digital asset market making strategies.
               </h4>
               <form className="hero-subscribe-from">
-                <input type="text" placeholder="Enter your email" />
-                <button className="site-btn sb-gradients">Get Started</button>
+                <a className="site-btn sb-gradients" href="#contact-us">Get Started</a>
               </form>
             </div>
             <div className="col-md-6">
@@ -92,7 +89,7 @@ export default function Home() {
       {/* hero end */}
 
       {/* <!-- About section --> */}
-      <section className="about-section spad">
+      <section className="about-section spad" id="about-section">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-6 about-text">
@@ -108,7 +105,7 @@ export default function Home() {
                 conveniently and without restriction. It’s the dawn of a better,
                 more free world.
               </p>
-              <a href="" className="site-btn sb-gradients sbg-line mt-5">
+              <a  href="#contact-us" className="site-btn sb-gradients sbg-line mt-5">
                 Get Started
               </a>
             </div>
@@ -121,7 +118,7 @@ export default function Home() {
       {/* <!-- About section end --> */}
 
       {/* <!-- Features section --> */}
-      <section className="features-section spad gradient-bg">
+      <section className="features-section spad gradient-bg" id="features-section">
         <div className="container text-white">
           <div className="section-title text-center">
             <h2>Our Features</h2>
@@ -332,7 +329,7 @@ export default function Home() {
       {/* <!-- Fact section end --> */}
 
       {/* <!-- Team section --> */}
-      <section className="team-section  px-4 pb-4">
+      <section className="team-section  px-4 pb-4" id="team-section">
         <div className="container">
           <div className="section-title text-center">
             <h2>Meet Our Team</h2>
@@ -461,81 +458,18 @@ export default function Home() {
       </section> */}
       {/* <!-- Review section end --> */}
 
-      <footer className="footer-section ">
-        <div className="row ">
-          <div className="  justify-content-center gradient-bg">
-            {/* <div className="col-md-6 col-lg-3 footer-widget">
-              <Image
-                src="/img/logo.png"
-                className="mb-4"
-                alt=""
-                width={116}
-                height={36}
-              />
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia dese mollit anim id est laborum.
-              </p>
-              <span>
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All
-                rights reserved | This template is made with{" "}
-                <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-                <a href="https://colorlib.com" target="_blank">
-                  Colorlib
-                </a>
-              </span>
-            </div>
-            <div className="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-              <h5 className="widget-title">Resources</h5>
-              <ul>
-                <li>
-                  <a href="#">How to Buy Coin</a>
-                </li>
-                <li>
-                  <a href="#">Coin Overview</a>
-                </li>
-                <li>
-                  <a href="#">Blog News</a>
-                </li>
-                <li>
-                  <a href="#">How to Sell Coin</a>
-                </li>
-                <li>
-                  <a href="#">Purchase Theme</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-              <h5 className="widget-title">Quick Links</h5>
-              <ul>
-                <li>
-                  <a href="#">Network Stats</a>
-                </li>
-                <li>
-                  <a href="#">Block Explorers</a>
-                </li>
-                <li>
-                  <a href="#">Governance</a>
-                </li>
-                <li>
-                  <a href="#">Exchange Markets</a>
-                </li>
-                <li>
-                  <a href="#">Get Theme</a>
-                </li>
-              </ul>
-            </div> */}
-            
+          <div className="  justify-content-center gradient-bg" id="contact-us">
             <ContactUs />
           </div>
+      <footer className="footer-section ">
+        <div className="row ">
           <div className="footer-bottom">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center text-lg-right pt-4">
                 <p style={{ fontSize: "10px" }}>
-                  Disclaimer -  The zenithialabs Group is not
-                  involved in the management of crypto assets or fiat currency
-                  on behalf of investors. The information provided is purely for
+                  Disclaimer - The zenithialabs Group is not involved in the
+                  management of crypto assets or fiat currency on behalf of
+                  investors. The information provided is purely for
                   informational purposes and should not be considered an offer
                   or solicitation to purchase any crypto assets or financial
                   instruments.
