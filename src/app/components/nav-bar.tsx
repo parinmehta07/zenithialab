@@ -20,7 +20,7 @@ function NAVBAR() {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-space-between px-4">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end px-4">
           <Nav className="o ">
             <Nav.Link className="px-4" href="/">Home</Nav.Link>
             <Nav.Link  href="#about-section">About</Nav.Link>
