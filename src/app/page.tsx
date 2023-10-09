@@ -71,7 +71,9 @@ export default function Home() {
                 digital asset market making strategies.
               </h4>
               <form className="hero-subscribe-from">
-                <a className="site-btn sb-gradients" href="#contact-us">Get Started</a>
+                <a className="site-btn sb-gradients" href="#contact-us">
+                  Get Started
+                </a>
               </form>
             </div>
             <div className="col-md-6">
@@ -93,19 +95,23 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-6 about-text">
-              <h2>What is Bitcoin</h2>
+              <h2>What is Zenithialabs</h2>
               <h5>
-                Bitcoin is an innovative payment network and a new kind of
-                money.
+                Zenithialabs is a high-frequency trading firm specializing in
+                blockchain-based digital asset market making to promote
+                liquidity and adoption.
               </h5>
               <p>
-                Bitcoin is one of the most important inventions in all of human
-                history. For the first time ever, anyone can send or receive any
-                amount of money with anyone else, anywhere on the planet,
-                conveniently and without restriction. It’s the dawn of a better,
-                more free world.
+                Zenithialabs, a high-frequency trading firm, enhances blockchain
+                adoption by ensuring 24/7 liquidity for 200+ tokens across 30+
+                crypto exchanges. They aid tokens in fundraising and offer
+                competitive bid-ask quotes to minimize market impact costs for
+                significant trades.{" "}
               </p>
-              <a  href="#contact-us" className="site-btn sb-gradients sbg-line mt-5">
+              <a
+                href="#contact-us"
+                className="site-btn sb-gradients sbg-line mt-5"
+              >
                 Get Started
               </a>
             </div>
@@ -118,12 +124,17 @@ export default function Home() {
       {/* <!-- About section end --> */}
 
       {/* <!-- Features section --> */}
-      <section className="features-section spad gradient-bg" id="features-section">
+      <section
+        className="features-section spad gradient-bg"
+        id="features-section"
+      >
         <div className="container text-white">
           <div className="section-title text-center">
             <h2>Our Features</h2>
             <p>
-              Bitcoin is the simplest way to exchange money at very low cost.
+              We bring a wealth of expertise, innovative solutions, and a
+              collaborative approach to optimize resources and drive tangible
+              results for your business.
             </p>
           </div>
           <div className="row">
@@ -131,14 +142,11 @@ export default function Home() {
             <div className="col-md-6 col-lg-4 feature">
               <i className="ti-mobile"></i>
               <div className="feature-content">
-                <h4>Mobile Apps</h4>
+                <h4>Token Project Market Making</h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
+                  Ensuring 24/7 liquidity for 200+ tokens and 30+ spot and
+                  derivative crypto exchanges{" "}
                 </p>
-                <a href="" className="readmore">
-                  Readmore
-                </a>
               </div>
             </div>
             {/* <!-- feature --> */}
@@ -147,68 +155,55 @@ export default function Home() {
               <div className="feature-content">
                 <h4>Safe & Secure</h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
+                  At Zenithialabs, safety is our top priority. Our advanced
+                  measures guarantee the highest level of security for your
+                  assets and transactions in the cryptocurrency market.{" "}
                 </p>
-                <a href="" className="readmore">
-                  Readmore
-                </a>
               </div>
             </div>
             {/* <!-- feature --> */}
             <div className="col-md-6 col-lg-4 feature">
               <i className="ti-wallet"></i>
               <div className="feature-content">
-                <h4>Wallet</h4>
+                <h4>Token Listing and Distribution Advisory</h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
+                  Assisting tokens by connecting them with our network of
+                  exchanges and helping with capital raise by timely distributio{" "}
                 </p>
-                <a href="" className="readmore">
-                  Readmore
-                </a>
               </div>
             </div>
             {/* <!-- feature --> */}
             <div className="col-md-6 col-lg-4 feature">
               <i className="ti-headphone-alt"></i>
               <div className="feature-content">
-                <h4>Experts Support</h4>
+                <h4>Designated Market Making for Trading Venues</h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
+                  Providing end-to-end liquidity solution for all tokens on an
+                  exchange with 99.99% uptime.{" "}
                 </p>
-                <a href="" className="readmore">
-                  Readmore
-                </a>
               </div>
             </div>
             {/* <!-- feature --> */}
             <div className="col-md-6 col-lg-4 feature">
               <i className="ti-reload"></i>
               <div className="feature-content">
-                <h4>Instant Exchange</h4>
+                <h4>OTC Solutions for Institutional Investors </h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
+                  Offering competitive bid-ask quotes for large trade orders to
+                  reduce market impact cost.{" "}
                 </p>
-                <a href="" className="readmore">
-                  Readmore
-                </a>
               </div>
             </div>
             {/* <!-- feature --> */}
             <div className="col-md-6 col-lg-4 feature">
               <i className="ti-panel"></i>
               <div className="feature-content">
-                <h4>Recuring Buys</h4>
+                <h4>Boosting performance via liquidity partnerships.</h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
+                  Zenithialabs provides expert token listing, market making, and
+                  OTC solutions for a seamless cryptocurrency trading
+                  experience.
                 </p>
-                <a href="" className="readmore">
-                  Readmore
-                </a>
               </div>
             </div>
           </div>
@@ -458,9 +453,9 @@ export default function Home() {
       </section> */}
       {/* <!-- Review section end --> */}
 
-          <div className="  justify-content-center gradient-bg" id="contact-us">
-            <ContactUs />
-          </div>
+      <div className="  justify-content-center gradient-bg" id="contact-us">
+        <ContactUs />
+      </div>
       <footer className="footer-section ">
         <div className="row ">
           <div className="footer-bottom">
