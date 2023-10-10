@@ -66,7 +66,7 @@ export default function Home() {
                 Crypto Trading
               </h2>
               <h4>
-                A group of experts specializing in high-frequency trading is
+                A group of experts specializing in  trading is
                 spearheading the promotion of blockchain adoption by leveraging
                 digital asset market making strategies.
               </h4>
@@ -97,12 +97,12 @@ export default function Home() {
             <div className="col-lg-6 offset-lg-6 about-text">
               <h2>What is Zenithialabs</h2>
               <h5>
-                Zenithialabs is a high-frequency trading firm specializing in
+                Zenithialabs is a  trading firm specializing in
                 blockchain-based digital asset market making to promote
                 liquidity and adoption.
               </h5>
               <p>
-                Zenithialabs, a high-frequency trading firm, enhances blockchain
+                Zenithialabs is a  trading firm, enhances blockchain
                 adoption by ensuring 24/7 liquidity for 200+ tokens across 30+
                 crypto exchanges. They aid tokens in fundraising and offer
                 competitive bid-ask quotes to minimize market impact costs for
