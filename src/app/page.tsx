@@ -45,6 +45,41 @@ export default function Home() {
     },
   ];
 
+  const feature = [
+    {
+      title: "Token Project Market Making",
+      text: "We bring a wealth of expertise, innovative solutions, and a collaborative approach to optimize resources and drive tangible results for your business.",
+    },
+    {
+      title: "Safe & Secure",
+      text: "Safety is our top priority. Our advanced measures guarantee the highest level of security for  assets and transactions in the cryptocurrency market.",
+    },
+    {
+      title: "OTC Solutions for Institutional Investors ",
+      text: "Offering competitive bid-ask quotes for large trade orders to reduce market impact cost.",
+    },
+    {
+      title: "Boosting performance via liquidity partnerships.",
+      text: "Zenithialabs provides expert token listing, market making, and OTC solutions for a seamless cryptocurrency trading experience.",
+    },
+  ];
+
+  const partner = [
+    // {
+    //   logo: "https://www.39k.group/static/media/bibox.390af9c62fa597418d81c57437f83dbf.svg",
+    // },
+    {
+      logo:"https://www.39k.group/static/media/binance.22f41c154e9fe37a13863c192924d955.svg"
+    },
+    {logo:"https://www.39k.group/static/media/coindcx.955aed5b9d05e817155962f10aee215d.svg"},
+    {
+      logo:"https://www.39k.group/static/media/kucoin.6a2dbd3c2ffcdb427f8521a552d4fb7d.svg"
+    },
+    {
+      logo:"https://wazirx.com/static/media/logo_wazirx.79711eef.svg"
+    }
+  ];
+
   return (
     <main className={styles.main}>
       {/* <div id="preloder">
@@ -66,9 +101,9 @@ export default function Home() {
                 Crypto Trading
               </h2>
               <h4>
-                A group of experts specializing in  trading is
-                spearheading the promotion of blockchain adoption by leveraging
-                digital asset market making strategies.
+                A group of experts specializing in trading is spearheading the
+                promotion of blockchain adoption by leveraging digital asset
+                market making strategies.
               </h4>
               <form className="hero-subscribe-from">
                 <a className="site-btn sb-gradients" href="#contact-us">
@@ -97,16 +132,15 @@ export default function Home() {
             <div className="col-lg-6 offset-lg-6 about-text">
               <h2>What is Zenithialabs</h2>
               <h5>
-                Zenithialabs is a  trading firm specializing in
-                blockchain-based digital asset market making to promote
-                liquidity and adoption.
+                Zenithialabs is a trading firm specializing in blockchain-based
+                digital asset market making to promote liquidity and adoption.
               </h5>
               <p>
-                Zenithialabs is a  trading firm, enhances blockchain
-                adoption by ensuring 24/7 liquidity for 200+ tokens across 30+
-                crypto exchanges. They aid tokens in fundraising and offer
-                competitive bid-ask quotes to minimize market impact costs for
-                significant trades.{" "}
+                Zenithialabs is a trading firm, enhances blockchain adoption by
+                ensuring 24/7 liquidity for 200+ tokens across 30+ crypto
+                exchanges. They aid tokens in fundraising and offer competitive
+                bid-ask quotes to minimize market impact costs for significant
+                trades.{" "}
               </p>
               <a
                 href="#contact-us"
@@ -138,74 +172,14 @@ export default function Home() {
             </p>
           </div>
           <div className="row">
-            {/* <!-- feature --> */}
-            <div className="col-md-6 col-lg-4 feature">
-              <i className="ti-mobile"></i>
-              <div className="feature-content">
-                <h4>Token Project Market Making</h4>
-                <p>
-                  Ensuring 24/7 liquidity for 200+ tokens and 30+ spot and
-                  derivative crypto exchanges{" "}
-                </p>
+            {feature.map((elt) => (
+              <div className="col-md-6 process">
+                <div className="process-step">
+                  <h4>{elt.title}</h4>
+                  <p>{elt.text} </p>
+                </div>
               </div>
-            </div>
-            {/* <!-- feature --> */}
-            <div className="col-md-6 col-lg-4 feature">
-              <i className="ti-shield"></i>
-              <div className="feature-content">
-                <h4>Safe & Secure</h4>
-                <p>
-                  At Zenithialabs, safety is our top priority. Our advanced
-                  measures guarantee the highest level of security for your
-                  assets and transactions in the cryptocurrency market.{" "}
-                </p>
-              </div>
-            </div>
-            {/* <!-- feature --> */}
-            <div className="col-md-6 col-lg-4 feature">
-              <i className="ti-wallet"></i>
-              <div className="feature-content">
-                <h4>Token Listing and Distribution Advisory</h4>
-                <p>
-                  Assisting tokens by connecting them with our network of
-                  exchanges and helping with capital raise by timely distributio{" "}
-                </p>
-              </div>
-            </div>
-            {/* <!-- feature --> */}
-            <div className="col-md-6 col-lg-4 feature">
-              <i className="ti-headphone-alt"></i>
-              <div className="feature-content">
-                <h4>Designated Market Making for Trading Venues</h4>
-                <p>
-                  Providing end-to-end liquidity solution for all tokens on an
-                  exchange with 99.99% uptime.{" "}
-                </p>
-              </div>
-            </div>
-            {/* <!-- feature --> */}
-            <div className="col-md-6 col-lg-4 feature">
-              <i className="ti-reload"></i>
-              <div className="feature-content">
-                <h4>OTC Solutions for Institutional Investors </h4>
-                <p>
-                  Offering competitive bid-ask quotes for large trade orders to
-                  reduce market impact cost.{" "}
-                </p>
-              </div>
-            </div>
-            {/* <!-- feature --> */}
-            <div className="col-md-6 col-lg-4 feature">
-              <i className="ti-panel"></i>
-              <div className="feature-content">
-                <h4>Boosting performance via liquidity partnerships.</h4>
-                <p>
-                  Zenithialabs provides expert token listing, market making, and
-                  OTC solutions for a seamless cryptocurrency trading
-                  experience.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -215,14 +189,28 @@ export default function Home() {
       <section className="process-section spad">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Get Started With Bitcoin</h2>
-            <p>
+            <h2>Our growing partnerships connect us to the world </h2>
+            {/* <p>
               Start learning about Bitcoin with interactive tutorials. It’s fun,
               easy, and takes only a few minutes!{" "}
-            </p>
+            </p> */}
           </div>
           <div className="row">
-            <div className="col-md-4 process">
+            {partner.map((elt) => (
+              <div className="col-md-3 process">
+                <div className="process-step">
+                  <figure className="process-icon">
+                    <Image src={`${elt.logo}`} alt="#" width={90} height={70} />
+                  </figure>
+                  {/* <h4>Create Your Wallet</h4>
+              <p>
+                Excepteur sint occaecat cupidatat non proident sunt in culpa
+                qui officia deserunt mollit anim id est laborum.{" "}
+              </p> */}
+                </div>
+              </div>
+            ))}
+            {/* <div className="col-md-4 process">
               <div className="process-step">
                 <figure className="process-icon">
                   <Image
@@ -238,8 +226,8 @@ export default function Home() {
                   qui officia deserunt mollit anim id est laborum.{" "}
                 </p>
               </div>
-            </div>
-            <div className="col-md-4 process">
+            </div> */}
+            {/* <div className="col-md-4 process">
               <div className="process-step">
                 <figure className="process-icon">
                   <Image
@@ -272,7 +260,7 @@ export default function Home() {
                   qui officia deserunt mollit anim id est laborum.{" "}
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -284,9 +272,10 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-3">
               <div className="fact">
-                <h2>60</h2>
+                <h2>24/7</h2>
                 <p>
-                  Support <br /> Countries
+                  liquidity <br />
+                  for 200+ tokens
                 </p>
                 <i className="ti-basketball"></i>
               </div>
@@ -295,14 +284,14 @@ export default function Home() {
               <div className="fact">
                 <h2>12K</h2>
                 <p>
-                  Transactions <br /> per hour
+                  Transactions <br /> per day
                 </p>
                 <i className="ti-panel"></i>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-3">
               <div className="fact">
-                <h2>5B</h2>
+                <h2>500k</h2>
                 <p>
                   Largest <br /> Transactions
                 </p>
@@ -311,7 +300,7 @@ export default function Home() {
             </div>
             <div className="col-sm-6 col-md-6 col-lg-3">
               <div className="fact">
-                <h2>240</h2>
+                <h2>7</h2>
                 <p>
                   Years <br /> of Experience
                 </p>

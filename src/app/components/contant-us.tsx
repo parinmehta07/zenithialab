@@ -82,8 +82,8 @@ export default function ContactUs() {
           </div>
           <div className="col-lg-5 mt-5   text-center text-white justify-content-center align-item-center">
             <div>
-              <h5 className="" style={{ color: "#20509e" }}>ADDRESS</h5>
-              <p className="">65, Plus Offices, Sector 94, Mumbai</p>
+              {/* <h5 className="" style={{ color: "#20509e" }}>ADDRESS</h5> */}
+              {/* <p className="">65, Plus Offices, Sector 94, Mumbai</p> */}
             </div>
             <div>
             <h5 className="" style={{ color: "#20509e" }}>EMAIL</h5>
