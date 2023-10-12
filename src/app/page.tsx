@@ -170,8 +170,8 @@ export default function Home() {
             </p>
           </div>
           <div className="row">
-            {feature.map((elt) => (
-              <div className="col-md-6 process">
+            {feature.map((elt,i) => (
+              <div className="col-md-6 process" key={i}>
                 <div className="process-step">
                   <h4>{elt.title}</h4>
                   <p>{elt.text} </p>
@@ -194,8 +194,8 @@ export default function Home() {
             </p> */}
           </div>
           <div className="row">
-            {partner.map((elt) => (
-              <div className="col-md-3 process">
+            {partner.map((elt,i) => (
+              <div className="col-md-3 process" key={i}>
                 <div className="process-step">
                   <figure className="process-icon">
                     <Image src={`${elt.logo}`} alt="#" width={90} height={70} />
