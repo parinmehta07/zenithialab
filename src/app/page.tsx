@@ -59,7 +59,7 @@ export default function Home() {
       text: "Offering competitive bid-ask quotes for large trade orders to reduce market impact cost.",
     },
     {
-      title: "Boosting performance via liquidity partnerships.",
+      title: "Optimizing via partnerships.",
       text: "Zenithialabs provides expert token listing, market making, and OTC solutions for a seamless cryptocurrency trading experience.",
     },
   ];
