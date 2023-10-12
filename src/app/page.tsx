@@ -65,9 +65,7 @@ export default function Home() {
   ];
 
   const partner = [
-    // {
-    //   logo: "https://www.39k.group/static/media/bibox.390af9c62fa597418d81c57437f83dbf.svg",
-    // },
+   
     {
       logo:"https://www.39k.group/static/media/binance.22f41c154e9fe37a13863c192924d955.svg"
     },
