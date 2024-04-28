@@ -8,43 +8,6 @@ import CALLOUT from "./components/callout";
 const { Public_Assests_Url } = process.env;
 
 export default function Home() {
-  const teams = [
-    {
-      name: "Tom Binegar",
-      role: "Marketing Director",
-      image: "/img/member/1.jpg",
-      description:
-        "Jackson Nash is a full-time faculty member of the Marketing and Behavioural",
-    },
-    {
-      name: "Tom Binegar",
-      role: "Marketing Director",
-      image: "/img/member/1.jpg",
-      description:
-        "Jackson Nash is a full-time faculty member of the Marketing and Behavioural",
-    },
-    {
-      name: "Tom Binegar",
-      role: "Marketing Director",
-      image: "/img/member/1.jpg",
-      description:
-        "Jackson Nash is a full-time faculty member of the Marketing and Behavioural",
-    },
-    {
-      name: "Tom Binegar",
-      role: "Marketing Director",
-      image: "/img/member/1.jpg",
-      description:
-        "Jackson Nash is a full-time faculty member of the Marketing and Behavioural",
-    },
-    {
-      name: "Tom Binegar",
-      role: "Marketing Director",
-      image: "/img/member/1.jpg",
-      description:
-        "Jackson Nash is a full-time faculty member of the Marketing and Behavioural",
-    },
-  ];
 
   const feature = [
     {
@@ -101,13 +64,13 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 offset-lg-12 about-text">
-              <h2>Ready to Partner with Us?</h2>
-              <h5>
+              <h2>Ready to Partner with Us</h2>
+              {/* <h5>
               Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
-              </h5>
+              </h5> */}
               <a
                 href="#contact-us"
-                className="site-btn   sbg-line mt-5"
+                className="site-btn   sbg-line "
               >
                 Get Started
               </a>
@@ -336,7 +299,7 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center text-lg-right pt-4">
                 <p style={{ fontSize: "10px" }}>
-                  Disclaimer - The zenithialabs Group is not involved in the
+                  Disclaimer - The  Group is not involved in the
                   management of crypto assets or fiat currency on behalf of
                   investors. The information provided is purely for
                   informational purposes and should not be considered an offer

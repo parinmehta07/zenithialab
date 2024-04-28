@@ -12,12 +12,12 @@ function NAVBAR() {
     <>
     <Navbar collapseOnSelect expand="lg" bg="primary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav"  >
           <Nav className="">
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <Nav.Link href="#aboutus">ABOUT US</Nav.Link>
+            <Nav.Link href="/">HOME</Nav.Link>
+            <Nav.Link href="/aboutus">ABOUT US</Nav.Link>
             <NavDropdown title="PRODUCT" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -31,7 +31,7 @@ function NAVBAR() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link eventKey={2} href="#contact-us">
             CONTACT US
             </Nav.Link>
           </Nav>

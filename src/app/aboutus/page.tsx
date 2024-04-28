@@ -19,9 +19,13 @@ const About = () => {
         <div className="container my-5">
           <div className="row">
             <div className="col-lg-6">
-              <h1>Hello</h1>
+              <h1>Image</h1>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6  about-text">
+              <h2>Company Information</h2>
+              <h5 >
+              Parshwa Impex offers wordclass products and services Since 1992
+              </h5>
               <p>
                 Our company, Parshwa Impex, was established in 1992. We have
                 made a name for ourselves as one of the top suppliers in India.
@@ -37,7 +41,7 @@ const About = () => {
           </div>
         </div>
 
-        <footer className="footer-section footer" style={{}}>
+        <footer className="footer-section " style={{}}>
           <div className="row ">
             <div className="footer-bottom">
               <div className="row justify-content-center">
