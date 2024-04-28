@@ -4,6 +4,7 @@ import ContactUs from "./components/contant-us";
 import logo from "../../public/img/logo.png";
 import NAVBAR from "./components/nav-bar";
 import CALLOUT from "./components/callout";
+import Link from "next/link";
 
 const { Public_Assests_Url } = process.env;
 
@@ -29,18 +30,23 @@ export default function Home() {
   ];
 
   const products = [
+
     {
+      name:"Ball bearings",
       logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
     },
     {
+      name:"Roller Bearing",
       logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
     },
     {
+      name:"Bearing Units",
       logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
     },
-    {
-      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
-    },
+    // {
+    //   name:"",
+    //   logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+    // },
   ];
 
   return (
@@ -116,22 +122,22 @@ export default function Home() {
           </div>
           <div className="row">
             {products.map((elt, i) => (
-              <div className="col-md-3 process" key={i}>
+              <div className="col-md-4 process" key={i}>
                 <div className="process-step">
-                <h4>Ball Bearing</h4>
+                <h4>{elt.name}</h4>
                   <figure className="process-icon ">
                     <Image src={`${elt.logo}`} alt="#" width={190} height={170} />
                   </figure>
                  
                 <div className="pt-4">
 
-                <a
-                href="#contact-us"
+                <Link
+               href={{ pathname: '/products', query: { product: elt.name } }}
                 className="site-btn   sbg-line mt-5 mr-3"
                 style={{  textDecoration: 'none' }}
               >
                 Discover more
-              </a>
+              </Link>
                 </div>
                 </div>
               </div>
@@ -177,117 +183,7 @@ export default function Home() {
       {/* <!-- Process section end --> */}
 
       {/* <!-- Fact section --> */}
-      {/* <section className="fact-section gradient-bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6 col-md-6 col-lg-3">
-              <div className="fact">
-                <h2>24/7</h2>
-                <p>
-                  liquidity <br />
-                  for 200+ tokens
-                </p>
-                <i className="ti-basketball"></i>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-6 col-lg-3">
-              <div className="fact">
-                <h2>12K</h2>
-                <p>
-                  Transactions <br /> per day
-                </p>
-                <i className="ti-panel"></i>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-6 col-lg-3">
-              <div className="fact">
-                <h2>500k</h2>
-                <p>
-                  Largest <br /> Transactions
-                </p>
-                <i className="ti-stats-up"></i>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-6 col-lg-3">
-              <div className="fact">
-                <h2>7</h2>
-                <p>
-                  Years <br /> of Experience
-                </p>
-                <i className="ti-user"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* <!-- Fact section end --> */}
-
-      {/* <!-- Review section --> */}
-      {/* <section className="review-section spad">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 push-8">
-              <Image
-                className="quote mb-5"
-                src="/img/quote.png"
-                alt="#"
-                width={60}
-                height={60}
-              />
-              <div className="review-text-slider owl-carousel">
-                <div className="review-text">
-                  <p>
-                    "Bitcoin is exciting because it shows how cheap it can be.
-                    Bitcoin is better than currency in that you don’t have to be
-                    physically in the same place and, of course, for large
-                    transactions, currency can get pretty inconvenient.”
-                  </p>
-                </div>
-
-                <div className="review-text">
-                  <p>
-                    "Bitcoin is exciting because it shows how cheap it can be.
-                    Bitcoin is better than currency in that you don’t have to be
-                    physically in the same place and, of course, for large
-                    transactions, currency can get pretty inconvenient.”
-                  </p>
-                </div>
-                
-              </div>
-            </div>
-            <div className="col-lg-4 pr-0 pull-3">
-              <div className="review-meta-slider owl-carousel pt-5">
-                <div className="author-meta">
-                  <Image
-                    className="author-avatar set-bg"
-                    src="/img/review/1.jpg"
-                    alt=""
-                    width={60}
-                    height={60}
-                  />
-                  <div className="author-name">
-                    <h4>Aaron Ballance</h4>
-                    <p>Ceo Bitcoin</p>
-                  </div>
-                </div>
-                <div className="author-meta">
-                  <Image
-                    className="author-avatar set-bg"
-                    src="/img/review/1.jpg"
-                    alt=""
-                    width={60}
-                    height={60}
-                  />
-                  <div className="author-name">
-                    <h4>Aaron Ballance</h4>
-                    <p>Ceo Bitcoin</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+   
       {/* <!-- Review section end --> */}
 
       <div className="  justify-content-center gradient-bg" id="contact-us">

@@ -399,6 +399,15 @@ ol {
 	display: none;
 }
 
+.products {
+	position: relative;
+	text-align: center;
+	padding: 15px;
+	margin-top: 15px;
+	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+}
+
 .process-step {
 	position: relative;
 	text-align: center;
@@ -813,11 +822,9 @@ ol {
 -----------------------*/
 
 .footer {
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	width: 100%;
-	background-color: #f8f9fa;
-	padding: 20px 0;
 	text-align: center;
   }
 
