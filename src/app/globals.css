@@ -92,7 +92,7 @@ ol {
 -----------------------*/
 
 .spad {
-	padding-top: 100px;
+	padding-top: 35px;
 	padding-bottom: 90px;
 }
 
@@ -142,13 +142,12 @@ ol {
 	border-radius: 50px;
 	font-family: "Futura", sans-serif;
 	text-align: center;
-	border: 2px solid #7ad4cc;
+	border: 1px solid #7ad4cc;
 	cursor: pointer;
-	color: #fff;
 }
 
 .site-btn:hover {
-	color: #fff;
+	/* color: #fff; */
 }
 
 .site-btn.no-radius {
@@ -232,10 +231,7 @@ ol {
 -----------------------*/
 
 .header-section {
-	position: fixed;
-	top: 0;
-	z-index: 99;
-	width: 99%;
+	width: 100%;
 }
 
 .navbar-custom {
@@ -268,22 +264,24 @@ ol {
 -----------------------*/
 
 .hero-section {
-	padding-top: 160px;
-	display: block;
-	background-size: cover;
-	background-color: #f3f7f9;
-	background-position: right top;
-	background-repeat: no-repeat;
-	position: relative;
-	overflow: hidden;
+	padding-top: 55px;
+	background-image: url("../../public/img/background-hero.jpg"); /* The image used */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: auto;
+	background-size: cover; /* Resize the background image to cover the entire container */
+	height:480px;
+	filter: brightness(90%);
+	background-color: 'rgba(0, 0, 0, 0.5)';
+
 }
 
-.hero-section .laptop-image {
+/* .hero-section .laptop-image {
 	width: 685px;
 	max-width: none;
 	position: relative;
 	left: 80px;
-}
+} */
 
 .hero-text {
 	padding-top: 60px;
@@ -325,8 +323,20 @@ ol {
   About Section
 -----------------------*/
 
-.about-section .container {
+.about-section  {
 	position: relative;
+    color:  rgb(83, 29, 255) 75% ;
+	/* color:white; */
+    font-size: 40px;
+    font-weight: 400;
+    padding: 40px 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
 
 .about-text h2 {
@@ -431,7 +441,7 @@ ol {
 }
 
 .fact {
-	display: inline-block;
+	display: flex;
 	position: relative;
 }
 
@@ -801,6 +811,15 @@ ol {
 /*---------------------
 	Footer Section
 -----------------------*/
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #f8f9fa;
+	padding: 20px 0;
+	text-align: center;
+  }
 
 .footer-widget span {
 	color: #acb9cc;
@@ -1372,6 +1391,33 @@ ol {
 	        box-shadow: 0px 23px 49px rgba(33, 54, 61, 0.15);
 }
 
+.partner{
+    opacity: 0;
+    background: linear-gradient(90deg, rgb(58, 0, 141) 0%, rgb(83, 29, 255) 75%) text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 40px 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 /*------------------
 	Responsive
 ---------------------*/
@@ -1389,9 +1435,7 @@ ol {
 }
 
 @media (max-width: 1425px) {
-	.header-section .site-btn {
-		margin-left: 0;
-	}
+	
 	.hero-section,
 	.page-info-section {
 		background-position: right 30% top;
@@ -1747,3 +1791,5 @@ ol {
 		padding-left: 0;
 	}
 }
+
+

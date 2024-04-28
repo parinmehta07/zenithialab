@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
 import logo from "../../public/img/logo.png";
 import NAVBAR from "./components/nav-bar";
+import CALLOUT from "./components/callout";
 
 const { Public_Assests_Url } = process.env;
 
@@ -51,31 +52,32 @@ export default function Home() {
       text: "We bring a wealth of expertise, innovative solutions, and a collaborative approach to optimize resources and drive tangible results for your business.",
     },
     {
-      title: "Safe & Secure",
-      text: "Safety is our top priority. Our advanced measures guarantee the highest level of security for  assets and transactions in the cryptocurrency market.",
+      title: "Competitive Rates",
+      text: "We are committed to providing competitive pricing on all our products.",
     },
     {
-      title: "OTC Solutions for Institutional Investors ",
-      text: "Offering competitive bid-ask quotes for large trade orders to reduce market impact cost.",
+      title: "Experience and Expertise",
+      text: "With over 30 years of experience, we have a deep understanding of your industrial needs and can provide expert advice and solutions.",
     },
     {
-      title: "Optimizing via partnerships.",
-      text: "Zenithialabs provides expert token listing, market making, and OTC solutions for a seamless cryptocurrency trading experience.",
+      title: "Reliable Service",
+      text: "We prioritize on-time delivery and exceptional customer service, ensuring your projects run smoothly",
     },
   ];
 
-  const partner = [
-   
+  const products = [
     {
-      logo:"https://www.39k.group/static/media/binance.22f41c154e9fe37a13863c192924d955.svg"
-    },
-    {logo:"https://www.39k.group/static/media/coindcx.955aed5b9d05e817155962f10aee215d.svg"},
-    {
-      logo:"https://www.39k.group/static/media/kucoin.6a2dbd3c2ffcdb427f8521a552d4fb7d.svg"
+      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
     },
     {
-      logo:"https://wazirx.com/static/media/logo_wazirx.79711eef.svg"
-    }
+      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+    },
+    {
+      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+    },
+    {
+      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+    },
   ];
 
   return (
@@ -89,68 +91,29 @@ export default function Home() {
       </header>
 
       {/* hero sec */}
+        <CALLOUT />
 
-      <section className="hero-section">
-        <div className="container-fluid px-4">
-          <div className="row px-4">
-            <div className="col-md-6 hero-text">
-              <h2 style={{ color: "#20509e" }}>
-                Invest in <span>Bitcoin</span> <br />
-                Crypto Trading
-              </h2>
-              <h4>
-                A group of experts specializing in trading is spearheading the
-                promotion of blockchain adoption by leveraging digital asset
-                market making strategies.
-              </h4>
-              <form className="hero-subscribe-from">
-                <a className="site-btn sb-gradients" href="#contact-us">
-                  Get Started
-                </a>
-              </form>
-            </div>
-            <div className="col-md-6">
-              <Image
-                src={"/img/laptop.png"}
-                className="laptop-image"
-                alt=""
-                width={483}
-                height={480}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+
       {/* hero end */}
 
       {/* <!-- About section --> */}
       <section className="about-section spad" id="about-section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-6 about-text">
-              <h2>What is Zenithialabs</h2>
+            <div className="col-lg-12 offset-lg-12 about-text">
+              <h2>Ready to Partner with Us?</h2>
               <h5>
-                Zenithialabs is a trading firm specializing in blockchain-based
-                digital asset market making to promote liquidity and adoption.
+              Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
               </h5>
-              <p>
-                Zenithialabs is a trading firm, enhances blockchain adoption by
-                ensuring 24/7 liquidity for 200+ tokens across 30+ crypto
-                exchanges. They aid tokens in fundraising and offer competitive
-                bid-ask quotes to minimize market impact costs for significant
-                trades.{" "}
-              </p>
               <a
                 href="#contact-us"
-                className="site-btn sb-gradients sbg-line mt-5"
+                className="site-btn   sbg-line mt-5"
               >
                 Get Started
               </a>
             </div>
           </div>
-          <div className="about-img">
-            <Image src={"/img/about-img.png"} alt="" width={480} height={281} />
-          </div>
+         
         </div>
       </section>
       {/* <!-- About section end --> */}
@@ -162,15 +125,13 @@ export default function Home() {
       >
         <div className="container text-white">
           <div className="section-title text-center">
-            <h2>Our Features</h2>
+            <h2>WHY CHOOSE PARSHWA IMPEX & CO. ?</h2>
             <p>
-              We bring a wealth of expertise, innovative solutions, and a
-              collaborative approach to optimize resources and drive tangible
-              results for your business.
+            We're an established industrial distributor with 30+ years of experience in Bearings industry.
             </p>
           </div>
           <div className="row">
-            {feature.map((elt,i) => (
+            {feature.map((elt, i) => (
               <div className="col-md-6 process" key={i}>
                 <div className="process-step">
                   <h4>{elt.title}</h4>
@@ -184,47 +145,35 @@ export default function Home() {
       {/* <!-- Features section end --> */}
 
       {/* <!-- Process section --> */}
-      <section className="process-section spad">
+      <section className=" spad">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Our growing partnerships connect us to the world </h2>
-            {/* <p>
-              Start learning about Bitcoin with interactive tutorials. It’s fun,
-              easy, and takes only a few minutes!{" "}
-            </p> */}
+            <h2>PRODUCTS WE OFFERS AT Parshwa Impex</h2>
+           
           </div>
           <div className="row">
-            {partner.map((elt,i) => (
+            {products.map((elt, i) => (
               <div className="col-md-3 process" key={i}>
                 <div className="process-step">
-                  <figure className="process-icon">
-                    <Image src={`${elt.logo}`} alt="#" width={90} height={70} />
+                <h4>Ball Bearing</h4>
+                  <figure className="process-icon ">
+                    <Image src={`${elt.logo}`} alt="#" width={190} height={170} />
                   </figure>
-                  {/* <h4>Create Your Wallet</h4>
-              <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa
-                qui officia deserunt mollit anim id est laborum.{" "}
-              </p> */}
+                 
+                <div className="pt-4">
+
+                <a
+                href="#contact-us"
+                className="site-btn   sbg-line mt-5 mr-3"
+                style={{  textDecoration: 'none' }}
+              >
+                Discover more
+              </a>
+                </div>
                 </div>
               </div>
             ))}
-            {/* <div className="col-md-4 process">
-              <div className="process-step">
-                <figure className="process-icon">
-                  <Image
-                    src="/img/process-icons/1.png"
-                    alt="#"
-                    width={50}
-                    height={47}
-                  />
-                </figure>
-                <h4>Create Your Wallet</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.{" "}
-                </p>
-              </div>
-            </div> */}
+            
             {/* <div className="col-md-4 process">
               <div className="process-step">
                 <figure className="process-icon">
@@ -265,7 +214,7 @@ export default function Home() {
       {/* <!-- Process section end --> */}
 
       {/* <!-- Fact section --> */}
-      <section className="fact-section gradient-bg">
+      {/* <section className="fact-section gradient-bg">
         <div className="container">
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-3">
@@ -307,70 +256,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- Fact section end --> */}
-
-      {/* <!-- Team section --> */}
-      <section className="team-section  px-4 pb-4" id="team-section">
-        <div className="container">
-          <div className="section-title text-center">
-            <h2>Meet Our Team</h2>
-            <p>
-              Our experts in the field of crypto currency can always help you
-              with any of your questions!
-            </p>
-          </div>
-        </div>
-        <div className="team-members clearfix">
-          {teams.map((elt) => {
-            return (
-              <>
-                {/* <!-- Team member --> */}
-                <div className="member">
-                  <div className="member-text">
-                    <Image
-                      className="member-img set-bg"
-                      src={elt.image}
-                      alt="#"
-                      width={230}
-                      height={230}
-                    />
-                    <h2>{elt.name}</h2>
-                    <span>{elt.role}</span>
-                  </div>
-                  <div className="member-social">
-                    <a href="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="1em"
-                        viewBox="0 0 448 512"
-                      >
-                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                      </svg>
-                    </a>
-                  </div>
-                  <div className="member-info">
-                    <Image
-                      className="member-img mf set-bg"
-                      src={elt.image}
-                      alt="#"
-                      width={60}
-                      height={60}
-                    />
-
-                    <div className="member-meta">
-                      <h2>{elt.name}</h2>
-                      <span>{elt.role}</span>
-                    </div>
-                    <p>{elt.description}</p>
-                  </div>
-                </div>
-              </>
-            );
-          })}
-        </div>
-      </section>
-      {/* <!-- Team section --> */}
 
       {/* <!-- Review section --> */}
       {/* <section className="review-section spad">
