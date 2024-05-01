@@ -96,7 +96,7 @@ export default function Home() {
           <div className="section-title text-center">
             <h2>WHY CHOOSE PARSHWA IMPEX & CO. ?</h2>
             <p>
-            We're an established industrial distributor with 30+ years of experience in Bearings industry.
+            We are an established industrial distributor with 30+ years of experience in Bearings industry.
             </p>
           </div>
           <div className="row">
