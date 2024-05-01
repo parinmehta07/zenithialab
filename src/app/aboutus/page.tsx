@@ -47,12 +47,7 @@ const About = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-8 text-center text-lg-right pt-4">
                   <p style={{ fontSize: "10px" }}>
-                    Disclaimer - The zenithialabs Group is not involved in the
-                    management of crypto assets or fiat currency on behalf of
-                    investors. The information provided is purely for
-                    informational purposes and should not be considered an offer
-                    or solicitation to purchase any crypto assets or financial
-                    instruments.
+                    2024 PARSHWA IMPEX  Bearings and Company 
                   </p>
                   <ul className="footer-nav">
                     <li>
