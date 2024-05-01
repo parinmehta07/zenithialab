@@ -4,41 +4,45 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
-
-
+import { products } from "@/contant";
 
 function NAVBAR() {
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" bg="primary" data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav"  >
-          <Nav className="">
-            <Nav.Link href="/">HOME</Nav.Link>
-            <Nav.Link href="/aboutus">ABOUT US</Nav.Link>
-            <NavDropdown title="PRODUCT" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+      <Navbar collapseOnSelect expand="lg" bg="primary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="">
+              <Nav.Link href="/">HOME</Nav.Link>
+              <Nav.Link href="/aboutus">ABOUT US</Nav.Link>
+              <NavDropdown title="PRODUCT" id="collapsible-nav-dropdown">
+                {Object.keys(products).map((elt,i) => (
+                  <NavDropdown.Item href={`products?product=${elt}`} key={i}>
+                    {elt}
+                  </NavDropdown.Item>
+                ))}
+
+                {/* <NavDropdown.Item href="#action/3.2">
                 Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              </NavDropdown.Item> */}
+                {/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
+                {/* <NavDropdown.Divider /> */}
+                {/* <NavDropdown.Item href="#action/3.4">
                 Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link eventKey={2} href="#contact-us">
-            CONTACT US
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  </>
+              </NavDropdown.Item> */}
+              </NavDropdown>
+            </Nav>
+            <Nav>
+              <Nav.Link eventKey={2} href="#contact-us">
+                CONTACT US
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 

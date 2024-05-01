@@ -11,18 +11,22 @@ const Product = () => {
   const [cat, setCat] = useState<Object[]>();
   const [discription, setDiscription] = useState<any>();
   const [showDiscription, setShowDiscription] = useState<any>(false);
-  
-  
 
   const searchParams = useSearchParams();
   const query: any = searchParams.get("product") ?? "1"; // default value is "1"
   console.log("query", { query }, { cat });
 
   useEffect(() => {
-
     setCat([...products[query].categories] || []);
-    setDiscription(products[query])
+    // setDiscription(products[query])
   }, []);
+
+  const setDiscriptionFunction = (index: number) => {
+    if (!cat) return;
+    const { p1, p2, logo,name }: any = cat[index];
+    setDiscription({ p1, p2, logo,name });
+    setShowDiscription(true);
+  };
 
   return (
     <div>
@@ -38,30 +42,39 @@ const Product = () => {
           </div>
         </div>
 
-       { showDiscription && <div className="container my-5">
-          <div className="row">
-            <div className="col-lg-6">
-              <h1>Image</h1>
-            </div>
-            <div className="col-lg-6  about-text">
-              <h2>{query || ""}</h2>
-              <h5 >
-              {discription.p1}
-              </h5>
-              <p>
-              {discription.p2}
-
-              </p>
+        {showDiscription && (
+          <div className="container my-5">
+            <div className="row">
+              <div className="col-lg-6">
+                <Image
+                  src={`${discription.logo}`}
+                  alt="#"
+                  width={390}
+                  height={370}
+                />
+              </div>
+              <div className="col-lg-6  about-text">
+                <h2>{discription.name || ""}</h2>
+                <h5>{discription.p1}</h5>
+                <p>{discription.p2}</p>
+              </div>
             </div>
           </div>
-        </div>}
+        )}
         <div className="container pt-5">
-       {showDiscription && <div className="col-lg-12 text-center ">
+          {showDiscription && (
+            <div className="col-lg-12 text-center ">
               <h2>Related products</h2>
-        </div>}
-          <div className="row" style={{cursor:"pointer"}} onClick={()=>setShowDiscription(!showDiscription)}>
+            </div>
+          )}
+          <div className="row">
             {cat?.map((elt: any, i) => (
-              <div className="col-md-4 " key={i}>
+              <div
+                className="col-md-4 "
+                key={i}
+                style={{ cursor: "pointer" }}
+                onClick={() => setDiscriptionFunction(i)}
+              >
                 <div className="products">
                   <h4>{elt.name}</h4>
                   <div className="">
@@ -76,11 +89,11 @@ const Product = () => {
                     <button
                       className="site-btn "
                       style={{ textDecoration: "none" }}
-                      onClick={()=>{
-                        setShowDiscription(!showDiscription)
+                      onClick={() => {
+                        setDiscriptionFunction(i);
                       }}
                     >
-                     {!showDiscription? "Discover more": "See products"} 
+                       Discover more
                     </button>
                   </div>
                 </div>
