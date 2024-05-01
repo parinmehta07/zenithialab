@@ -8,14 +8,20 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Product = () => {
-  const [cat, setCat] = useState({categories:[]});
+  const [cat, setCat] = useState<Object[]>();
+  const [discription, setDiscription] = useState<any>();
+  const [showDiscription, setShowDiscription] = useState<any>(false);
+  
+  
+
   const searchParams = useSearchParams();
   const query: any = searchParams.get("product") ?? "1"; // default value is "1"
   console.log("query", { query }, { cat });
 
   useEffect(() => {
 
-    setCat(products[query] || []);
+    setCat([...products[query].categories] || []);
+    setDiscription(products[query])
   }, []);
 
   return (
@@ -32,33 +38,29 @@ const Product = () => {
           </div>
         </div>
 
-        <div className="container my-5">
+       { showDiscription && <div className="container my-5">
           <div className="row">
             <div className="col-lg-6">
               <h1>Image</h1>
             </div>
             <div className="col-lg-6  about-text">
-              <h2>Company Information</h2>
+              <h2>{query || ""}</h2>
               <h5 >
-              Parshwa Impex offers wordclass products and services Since 1992
+              {discription.p1}
               </h5>
               <p>
-                Our company, Parshwa Impex, was established in 1992. We have
-                made a name for ourselves as one of the top suppliers in India.
-                Our company is a leading seller of various types of bearings and
-                industrial products. We take pride in introducing ourselves as
-                one of the premier importers, stockists, and suppliers of ball,
-                roller, taper roller, and needle roller bearings. Our founder,
-                Hitesh Shah, started the bearing distribution business, and
-                today, we offer a wide range of industrial products and
-                bearings.
+              {discription.p2}
+
               </p>
             </div>
           </div>
-        </div>
-        <div className="container pt-2">
-          <div className="row">
-            {cat.categories.map((elt: any, i) => (
+        </div>}
+        <div className="container pt-5">
+       {showDiscription && <div className="col-lg-12 text-center ">
+              <h2>Related products</h2>
+        </div>}
+          <div className="row" style={{cursor:"pointer"}} onClick={()=>setShowDiscription(!showDiscription)}>
+            {cat?.map((elt: any, i) => (
               <div className="col-md-4 " key={i}>
                 <div className="products">
                   <h4>{elt.name}</h4>
@@ -71,13 +73,15 @@ const Product = () => {
                     />
                   </div>
                   <div className="">
-                    <a
-                      href=""
+                    <button
                       className="site-btn "
                       style={{ textDecoration: "none" }}
+                      onClick={()=>{
+                        setShowDiscription(!showDiscription)
+                      }}
                     >
-                      Discover more
-                    </a>
+                     {!showDiscription? "Discover more": "See products"} 
+                    </button>
                   </div>
                 </div>
               </div>
