@@ -12,12 +12,12 @@ export default function Home() {
 
   const feature = [
     {
-      title: "Token Project Market Making",
-      text: "We bring a wealth of expertise, innovative solutions, and a collaborative approach to optimize resources and drive tangible results for your business.",
+      title: "Quality You Can Trust",
+      text: " We partner with leading manufacturers to ensure exceptional product quality across our entire range. ",
     },
     {
       title: "Competitive Rates",
-      text: "We are committed to providing competitive pricing on all our products.",
+      text: "Committed to competitive pricing, we ensure affordability across our product lineup, maintaining value without compromising quality or performance.",
     },
     {
       title: "Experience and Expertise",
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       name:"Roller Bearing",
-      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/Barrel-Roller-Bearings.png",
     },
     {
       name:"Bearing Units",
