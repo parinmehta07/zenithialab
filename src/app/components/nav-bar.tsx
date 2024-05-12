@@ -9,17 +9,32 @@ import { products } from "@/contant";
 function NAVBAR() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="primary" data-bs-theme="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        data-bs-theme="dark"
+        className="bg-body-tertiary"
+        style={{ backgroundColor: "red" }}
+      >
         <Container>
-          <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="/">
+            {" "}
+            <Image
+              src="/img/Logoforwebsite.png"
+              alt="#"
+              width={61}
+              height={47}
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="">
-              <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="/aboutus">ABOUT US</Nav.Link>
+          <Navbar.Collapse id="responsive-navbar-nav text-white">
+            <Nav className="text-white justify-content-end"  style={{width:"75%",}}>
+              <Nav.Link href="/" style={{paddingInline:"20px"}}>HOME</Nav.Link>
+              <Nav.Link href="/aboutus" style={{paddingInline:"20px"}}>ABOUT US</Nav.Link>
               <NavDropdown title="PRODUCT" id="collapsible-nav-dropdown">
-                {Object.keys(products).map((elt,i) => (
-                  <NavDropdown.Item href={`products?product=${elt}`} key={i}>
+                {Object.keys(products).map((elt, i) => (
+                  <NavDropdown.Item href={`products?product=${elt}`} key={i}  style={{paddingInline:"20px"}}>
                     {elt}
                   </NavDropdown.Item>
                 ))}
@@ -34,8 +49,8 @@ function NAVBAR() {
               </NavDropdown.Item> */}
               </NavDropdown>
             </Nav>
-            <Nav>
-              <Nav.Link eventKey={2} href="#contact-us">
+            <Nav className="text-white" style={{paddingInline:"20px"}}> 
+              <Nav.Link eventKey={2} href="/contactus">
                 CONTACT US
               </Nav.Link>
             </Nav>

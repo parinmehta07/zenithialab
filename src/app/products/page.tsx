@@ -23,115 +23,144 @@ const Product = () => {
 
   const setDiscriptionFunction = (index: number) => {
     if (!cat) return;
-    const { p1, p2, logo,name }: any = cat[index];
-    setDiscription({ p1, p2, logo,name });
+    const { p1, p2, logo, name }: any = cat[index];
+    setDiscription({ p1, p2, logo, name });
     setShowDiscription(true);
+    window.scrollTo(0, 0);
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [discription]);
 
   return (
     <div>
       <main className={styles.main}>
-        <header className="header-section ">
-          <NAVBAR />
-        </header>
         <div className="container-fluid  text-white py-5 gradient-bg">
           <div className="row">
             <div className="col-12 text-center">
-              <h2>{query}</h2>
+              <h2 className="">{query}</h2>
             </div>
           </div>
         </div>
 
-        {showDiscription && (
+        {showDiscription && query != "Safety Equipment" && (
           <div className="container my-5">
             <div className="row">
               <div className="col-lg-6">
                 <Image
-                  src={`${discription.logo}`}
+                  src={`${discription?.logo}`}
                   alt="#"
                   width={390}
                   height={370}
                 />
               </div>
-              <div className="col-lg-6  about-text">
-                <h2>{discription.name || ""}</h2>
-                <h5>{discription.p1}</h5>
-                <p>{discription.p2}</p>
+              <div className="col-lg-6  about-text ">
+                <h2 className="text-center">{discription?.name || ""}</h2>
+                <h5>{discription?.p1}</h5>
+                <h5>{discription?.p2}</h5>
               </div>
             </div>
           </div>
         )}
-        <div className="container pt-5">
-          {showDiscription && (
+        <div className="container ">
+          {showDiscription && query != "Safety Equipment" && (
             <div className="col-lg-12 text-center ">
               <h2>Related products</h2>
             </div>
           )}
-          <div className="row">
-            {cat?.map((elt: any, i) => (
-              <div
-                className="col-md-4 "
-                key={i}
-                style={{ cursor: "pointer" }}
-                onClick={() => setDiscriptionFunction(i)}
-              >
-                <div className="products">
-                  <h4>{elt.name}</h4>
-                  <div className="">
-                    <Image
-                      src={`${elt.logo}`}
-                      alt="#"
-                      width={190}
-                      height={170}
-                    />
-                  </div>
-                  <div className="">
-                    <button
-                      className="site-btn "
-                      style={{ textDecoration: "none" }}
-                      onClick={() => {
-                        setDiscriptionFunction(i);
-                      }}
-                    >
-                       Discover more
-                    </button>
+          {query != "Safety Equipment" && (
+            <div className="row">
+              {cat?.map((elt: any, i) => (
+                <div
+                  className="col-md-4 "
+                  key={i}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => setDiscriptionFunction(i)}
+                >
+                  <div className="products">
+                    <h4>{elt.name}</h4>
+                    <div className="">
+                      <Image
+                        src={`${elt.logo}`}
+                        alt="#"
+                        width={190}
+                        height={170}
+                      />
+                    </div>
+                    <div className="">
+                      <button
+                        className="site-btn "
+                        style={{ textDecoration: "none" }}
+                        onClick={() => {
+                          setDiscriptionFunction(i);
+                        }}
+                      >
+                        Discover more
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
+              ))}
+            </div>
+          )}
 
-        <footer className="footer-section pt-4 pb-0 footer" style={{}}>
-          <div className="row ">
-            <div className="footer-bottom">
-              <div className="row justify-content-center">
-                <div className="col-lg-8 text-center text-lg-right pt-4">
-                  <p style={{ fontSize: "10px" }}>
-                  2024 PARSHWA IMPEX  Bearings and Company 
-                  </p>
-                  <ul className="footer-nav">
-                    <li>
-                      <a href="">DPA</a>
-                    </li>
-                    <li>
-                      <a href="">Terms of Use</a>
-                    </li>
-                    <li>
-                      <a href="">Privacy Policy </a>
-                    </li>
-                    <li>
-                      <a href="">support@company.com</a>
-                    </li>
-                    <li>
-                      <a href="">(123) 456-7890</a>
-                    </li>
-                  </ul>
+          {query == "Safety Equipment" && (
+            <div className="container my-5">
+              <div className="row">
+                <div className="col-lg-6">
+                  <Image
+                    src={`https://dkcbearings.in/wp-content/uploads/2020/08/safety-item.jpg`}
+                    alt="#"
+                    width={390}
+                    height={370}
+                  />
+                </div>
+                <div className="col-lg-6  about-text">
+                  <h2>Anchor Fastener & Foundation Bolt</h2>
+                  <h5>
+                    In order to meet the emerging requirements of esteemed
+                    clients, we are offering a superior range of Industrial
+                    Safety Products.
+                  </h5>
+                  <table className="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Material</th>
+                        <th scope="col">Shape</th>
+                        <th scope="col">Product Type</th>
+                        <th scope="col">Application</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Leather</th>
+                        <td>Round</td>
+                        <td>Shoes</td>
+                        <td>Safety Products</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Steel</th>
+                        <td>Square</td>
+                        <td>Safety</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Plastic</th>
+                        <td>Round</td>
+                        <td>Suite</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-          </div>
-        </footer>
+          )}
+        </div>
       </main>
     </div>
   );

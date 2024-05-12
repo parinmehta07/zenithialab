@@ -6,13 +6,13 @@ export const products: any = {
         p2: "As the nominal contact angle increases, so does the axial load carrying capacity. As a result, angular contact ball bearings are more suitable than deep groove ball bearings for supporting higher axial forces.",
 
         name: "Angular Contact",
-        logo: "/img/Angular Contact Bearings (1).jpg",
+        logo: "/img/products/Angular Contact Bearings (1).jpg",
       },
       {
         p1: "Deep groove ball bearings are versatile, self-retaining bearings. These bearings, which are of simple design, robust in operation and easy to maintain, are available in single row and double row designs and in open and sealed variants.",
         p2: "Single row deep groove ball bearings are the most frequently used type of rolling bearing. They are produced in numerous sizes and designs and are particularly economical. Due to their very low frictional torque, open bearings are suitable for high and very high speeds. Bearing designs with gap seals are suitable for high speeds.",
         name: "Deep Groove",
-        logo: "	/img/Deep Grove Ball bearings single image.jpg",
+        logo: "	/img/products/resize-deep.jpg",
       },
       {
         p1: "Due to the large contact angle on both sides, the bearings can support alternating, pure axial or predominantly axial loads.",
@@ -90,6 +90,30 @@ export const products: any = {
         name: "Plummer Block",
         logo: "/img/Plummer Block.png",
       },
+    ],
+  },
+  "Industrial Items": {
+    categories: [
+      {
+        p1: "Our entity is involved in providing a comprehensive series of Anchor Fastener & Foundation Bolt. Experts manufacture this product as per industry norms employing the best quality material and advanced techniques.",
+        name: "Anchor Fastener & Foundation Bolt",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/dropping-anchor-bolt.jpg",
+      },
+      {
+        p1: "Asbestos-containing products are mainly used for construction and insulation, but the toxic mineral may also be found in many types of consumer goods. There are regulations for working on asbestos-containing materials in India.",
+        name: "Asbestos Items",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/asbestos-items-300x300.jpg",
+      },
+    ],
+  },
+  "Safety Equipment": {
+    categories: [
+      {
+        p1: "In order to meet the emerging requirements of esteemed clients, we are offering a superior range of Industrial Safety Products.",
+        name: "Anchor Fastener & Foundation Bolt",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/safety-item.jpg",
+      },
+      
     ],
   },
 };
