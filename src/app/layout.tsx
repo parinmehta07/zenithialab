@@ -9,8 +9,8 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "zenithialabs",
-  description: "zenithialabs Crypto Trading",
+  title: "Parshwa Impex",
+  description: "Parshwa Impex ",
 };
 
 export default function RootLayout({
