@@ -4,7 +4,7 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-export default function ContactUs() {
+const ContactUs = ()=> {
   const form = useRef(null);
 
   const sendEmail = async (e: any) => {
@@ -167,3 +167,6 @@ export default function ContactUs() {
     </>
   );
 }
+
+
+export default ContactUs 
