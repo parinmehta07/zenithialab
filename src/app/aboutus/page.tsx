@@ -22,17 +22,17 @@ const About = () => {
     },
     {
       title: "Competitive Rates",
-      logo: "/img/process-icons/2.png",
-      details: "We are committed to providing competitive pricing on all our products and services.",
+      logo: "/img/process-icons/rating.png",
+      details: "We are committed to providing competitive pricing on all our products and services with good service.",
     },
     {
       title: "Experience and Expertise",
-      logo: "/img/process-icons/2.png",
+      logo: "/img/process-icons/user-experience.png",
       details: "With over 30 years of experience, we have a deep understanding of your industrial needs and can provide expert advice and solutions.",
     },
     {
       title: "Reliable Service",
-      logo: "/img/process-icons/2.png",
+      logo: "/img/process-icons/communication.png",
       details: "We prioritize on-time delivery and exceptional customer service, ensuring your projects run smoothly. ",
     },
   ];
