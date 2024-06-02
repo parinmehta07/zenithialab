@@ -467,8 +467,10 @@ background-color:#1877F2 ;
 
 .process-step .process-icon {
 	/* height: 55px; */
-	margin-bottom: 30px;
-	padding-top: 5px;
+	/* margin-bottom: 30px;
+	padding-top: 5px; */
+	z-index: 1; /* Ensure the image stays at the base layer */
+
 }
 
 .process-step h4 {

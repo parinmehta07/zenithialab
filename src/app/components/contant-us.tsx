@@ -33,7 +33,7 @@ export default function ContactUs() {
           </p>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-4 my-5">
-              <a href="tel:+9322332724" style={{ textDecoration: 'none' }}>
+              <a href="tel:9322332724" style={{ textDecoration: 'none' }}>
                 <div className="border-0">
                   <div className="card-body text-center process-step ">
                     <Image

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
@@ -14,25 +14,24 @@ export default function Home() {
     {
       title: "Quality Assurance",
       logo: "/img/Quality_Assurance.jpg",
-      
+
       text: " We partner with leading manufacturers to ensure exceptional product quality across our entire range. ",
     },
     {
       title: "Competitive Rates",
-      logo:"/img/comapre-rate.jpg",
-      
+      logo: "/img/comapre-rate.jpg",
+
       text: "Committed to competitive pricing, we ensure affordability across our product lineup, maintaining value without compromising quality or performance.",
     },
     {
       title: "Experience & Expertise",
-      logo:"/img/experice.jpg",
+      logo: "/img/experice.jpg",
       text: "With over 30 years of experience, we have a deep understanding of your industrial needs and can provide expert advice and solutions.",
     },
     {
       title: "Reliable Service",
       text: "We prioritize on-time delivery and exceptional customer service, ensuring your projects run smoothly",
-      logo:"/img/Best services.png",
-
+      logo: "/img/Best services.png",
     },
   ];
 
@@ -50,7 +49,7 @@ export default function Home() {
       logo: "/img/bearing units home page file (2) [MConverter.eu].jpg",
     },
     {
-      name:"Safety Equipment",
+      name: "Safety Equipment",
       logo: "/img/safety eqipments.jpg",
     },
   ];
@@ -104,9 +103,10 @@ export default function Home() {
           <div className="row p-2">
             {feature.map((elt, i) => (
               <div className=" col-md-3  process " key={i}>
-                <div className="process-step " style={{ padding: "8%" }}>
-                  <Image src={`${elt.logo}`} alt="#" width={290} height={170} />
-                  <h4 className="pt-2">{elt.title}</h4>
+                <div className="process-step " style={{ paddingTop: "4%" }}>
+                  <Image src={`${elt.logo}`} alt="#" width={320} className="pt-2"
+                    height={200}/>
+                  <h4 className="pt-4">{elt.title}</h4>
                   {/* <p>{elt.text} </p> */}
                 </div>
               </div>
@@ -124,10 +124,18 @@ export default function Home() {
           </div>
           <div className="row">
             {products.map((elt, i) => (
-              <div className="col-md-3 process" key={i}>
+              <div className="col-md-3 col-sm-12 process" key={i}>
                 <div className="process-step">
                   <h4>{elt.name}</h4>
-                  <Image className="process-icon" src={`${elt.logo}`} alt="#" width={300} height={190} />
+                  <Image
+                    className="process-icon"
+                    src={`${elt.logo}`}
+                    alt="#"
+                    width={300}
+                    height={190}
+                    // layout="fill"
+                    objectFit="contain"
+                  />
 
                   <div className="">
                     <Link
