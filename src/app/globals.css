@@ -450,8 +450,8 @@ background-color:#1877F2 ;
 .products {
 	position: relative;
 	text-align: center;
-	padding: 15px;
-	margin-top: 15px;
+	/* padding: 15px;
+	margin-top: 15px; */
 	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 	box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 }
@@ -459,14 +459,14 @@ background-color:#1877F2 ;
 .process-step {
 	position: relative;
 	text-align: center;
-	padding: 15px;
-	margin-top: 15px;
+	padding: 4%;
+	margin-top: 4%;
 	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 1.15);
 	box-shadow: 0 14px 43px rgba(33, 54, 61, 1.15);
 }
 
 .process-step .process-icon {
-	height: 55px;
+	/* height: 55px; */
 	margin-bottom: 30px;
 	padding-top: 5px;
 }
@@ -1768,7 +1768,9 @@ div {
 		/* padding: 30px 0; */
 		background: #fff;
 	}
-
+	.process{
+		padding-top: 4%;
+	}
 	.contact-form form {
 		margin-top: 4%;
 		padding: 8%;

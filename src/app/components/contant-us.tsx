@@ -11,11 +11,11 @@ export default function ContactUs() {
     e.preventDefault();
     try {
       await emailjs.sendForm(
-        "service_dkpeqqi",
-        "template_aa9a94l",
+        "service_4q4t6l7",
+        "template_47dhtw4",
         form.current || "No message",
         {
-          publicKey: "zeZhtnbcwKTgUrj7c",
+          publicKey: "n2WvRmzk2RClYzJfN",
         }
       );
     } catch (error) {
@@ -36,17 +36,17 @@ export default function ContactUs() {
             <div className="col-sm-12 col-md-6 col-lg-4 my-5">
               <a href="tel:+9322332724" style={{ textDecoration: 'none' }}>
                 <div className="border-0">
-                  <div className="card-body text-center process-step p-4">
+                  <div className="card-body text-center process-step ">
                     <Image
                       src={"/img/telephone-outbound-fill.svg"}
-                      className="pb-2"
+                      className="pb-2 pt-2"
                       width={50}
                       height={50}
                       alt={""}
                     />
                     <h4 className="text-uppercase mb-5">call us</h4>
-                    <p>+9322332724</p>
-                    
+                    <p  style={{"fontWeight": 600}}>+919322332724</p>
+                    <p  style={{"fontWeight": 600}}>+919892402162</p>
                   </div>
                 </div>
               </a>
@@ -63,7 +63,7 @@ export default function ContactUs() {
                       alt={""}
                     />
                     <h4 className="text-uppercase mb-1">Address</h4>
-                    <p>
+                    <p  style={{"fontWeight": 600}}>
                       Parshwa Impex, 1003, Levata, 64, Nagdevi St, Mohamadali
                       Road, Mumbai, Maharashtra 400003
                     </p>
@@ -83,7 +83,8 @@ export default function ContactUs() {
                         alt={""}
                       />
                       <h4 className="text-uppercase mb-5">Mail</h4>
-                      <p>parshwaimpex1@gmail.com</p>
+                      <p className="font-weight-bold" style={{"fontWeight": 600}}>parshwaimpex1@gmail.com</p>
+
                     </div>
                   </div>
               </a>

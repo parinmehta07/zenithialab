@@ -13,39 +13,46 @@ export default function Home() {
   const feature = [
     {
       title: "Quality Assurance",
+      logo: "/img/Quality_Assurance.jpg",
+      
       text: " We partner with leading manufacturers to ensure exceptional product quality across our entire range. ",
     },
     {
       title: "Competitive Rates",
+      logo:"/img/comapre-rate.jpg",
+      
       text: "Committed to competitive pricing, we ensure affordability across our product lineup, maintaining value without compromising quality or performance.",
     },
     {
       title: "Experience & Expertise",
+      logo:"/img/experice.jpg",
       text: "With over 30 years of experience, we have a deep understanding of your industrial needs and can provide expert advice and solutions.",
     },
     {
       title: "Reliable Service",
       text: "We prioritize on-time delivery and exceptional customer service, ensuring your projects run smoothly",
+      logo:"/img/Best services.png",
+
     },
   ];
 
   const products = [
     {
       name: "Ball bearings",
-      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+      logo: "/img/Ball bearing home page.jpg",
     },
     {
       name: "Roller Bearing",
-      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/Barrel-Roller-Bearings.png",
+      logo: "/img/roller bearing.jpg",
     },
     {
       name: "Bearing Units",
-      logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
+      logo: "/img/bearing units home page file (2) [MConverter.eu].jpg",
     },
-    // {
-    //   name:"",
-    //   logo: "	https://dkcbearings.in/wp-content/uploads/2020/09/fag-ball-bearing.jpg",
-    // },
+    {
+      name:"Safety Equipment",
+      logo: "/img/safety eqipments.jpg",
+    },
   ];
 
   return (
@@ -54,7 +61,6 @@ export default function Home() {
 		<div className="loader"></div>
 	</div> */}
 
-     
       {/* hero sec */}
       <CALLOUT />
 
@@ -69,7 +75,11 @@ export default function Home() {
               {/* <h5>
               Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
               </h5> */}
-              <a href="/contactus" className="site-btn   sbg-line " style={{ textDecoration: "none"}}>
+              <a
+                href="/contactus"
+                className="site-btn   sbg-line "
+                style={{ textDecoration: "none" }}
+              >
                 Get Started
               </a>
             </div>
@@ -79,10 +89,7 @@ export default function Home() {
       {/* <!-- About section end --> */}
 
       {/* <!-- Features section --> */}
-      <section
-        className="features-section  gradient-bg"
-        id="features-section"
-      >
+      <section className="features-section  gradient-bg" id="features-section">
         <div className="spad text-white">
           <div className="section-title text-center">
             <h2>
@@ -94,11 +101,12 @@ export default function Home() {
               experience in Bearings industry.
             </p>
           </div>
-          <div className="row p-4">
+          <div className="row p-2">
             {feature.map((elt, i) => (
-              <div className=" col-md-3  process p-4" key={i}>
-                <div className="process-step " style={{padding:"8%"}}>
-                  <h4>{elt.title}</h4>
+              <div className=" col-md-3  process " key={i}>
+                <div className="process-step " style={{ padding: "8%" }}>
+                  <Image src={`${elt.logo}`} alt="#" width={290} height={170} />
+                  <h4 className="pt-2">{elt.title}</h4>
                   {/* <p>{elt.text} </p> */}
                 </div>
               </div>
@@ -110,23 +118,18 @@ export default function Home() {
 
       {/* <!-- Process section --> */}
       <section className=" spad">
-        <div className="container">
+        <div className="p-2">
           <div className="section-title text-center">
             <h2>PRODUCTS WE OFFERS AT Parshwa Impex</h2>
           </div>
           <div className="row">
             {products.map((elt, i) => (
-              <div className="col-md-4 process" key={i}>
+              <div className="col-md-3 process" key={i}>
                 <div className="process-step">
                   <h4>{elt.name}</h4>
-                    <Image
-                      src={`${elt.logo}`}
-                      alt="#"
-                      width={190}
-                      height={170}
-                    />
+                  <Image className="process-icon" src={`${elt.logo}`} alt="#" width={300} height={190} />
 
-                  <div className="" >
+                  <div className="">
                     <Link
                       href={{
                         pathname: "/products",
@@ -188,7 +191,6 @@ export default function Home() {
       <div className="  justify-content-center " id="contact-us">
         <ContactUs />
       </div>
-      
     </main>
   );
 }

@@ -75,11 +75,11 @@ const Footer = () => {
                 </div>
                 <div className="pt-4">
                 <a href="tel:+9322332724" className="pt-4">
-                  <i className="fas fa-phone mr-3"></i> <p>9322332724</p>
+                  <i className="fas fa-phone mr-3"></i> <p>+919322332724</p>
                 </a>
                 </div>
                 <a href="tel:+9892402162">
-                  <i className="fas fa-print mr-3"></i>  <p>9892402162</p>
+                  <i className="fas fa-print mr-3"></i>  <p>+919892402162</p>
                 </a>
               </div>
             </div>
