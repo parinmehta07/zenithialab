@@ -2000,7 +2000,7 @@ div {
 .aspect-ratio-container {
 	position: relative;
 	width: 100%;
-	padding-top: 75%; /* Adjust this percentage to achieve the desired aspect ratio */
+	padding-top: 50%; /* Adjust this percentage to achieve the desired aspect ratio */
 	overflow: hidden;
   }
   

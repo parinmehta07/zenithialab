@@ -92,19 +92,20 @@ const Product = () => {
                   style={{ cursor: "pointer" }}
                   onClick={() => setDescriptionFunction(i)}
                 >
-                  <div className="products">
-                    <h4>{elt.name}</h4>
+                  <div className="products p-4">
+                    <h4 className="">{elt.name}</h4>
                     <div className="aspect-ratio-container">
                       <Image
                         src={`${elt.logo}`}
                         alt="#"
                         layout="fill"
                         objectFit="contain"
+                        
                       />
                     </div>
                     <div>
                       <button
-                        className="site-btn"
+                        className="site-btn "
                         style={{ textDecoration: "none" }}
                         onClick={() => {
                           setDescriptionFunction(i);
@@ -120,15 +121,17 @@ const Product = () => {
           )}
 
           {query == "Safety Equipment" && (
-            <div className="container my-5">
+            <div className=" my-5">
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="aspect-ratio-container">
+                  <div className=" d-flex justify-content-center pb-4">
                     <Image
-                      src={`https://dkcbearings.in/wp-content/uploads/2020/08/safety-item.jpg`}
+                      src={`/img/products/safety-item.jpg`}
                       alt="#"
-                      layout="fill"
-                      objectFit="contain"
+                      // layout="fill"
+                      // objectFit="contain"
+                      width={410}
+                      height={480}
                     />
                   </div>
                 </div>

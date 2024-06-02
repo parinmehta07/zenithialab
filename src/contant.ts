@@ -96,8 +96,8 @@ export const products: any = {
     categories: [
       {
         p1: "Our entity is involved in providing a comprehensive series of Anchor Fastener & Foundation Bolt. Experts manufacture this product as per industry norms employing the best quality material and advanced techniques.",
-        name: "Anchor Fastener & Foundation Bolt",
-        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/dropping-anchor-bolt.jpg",
+        name: "Anchor  & Foundation Bolt",
+        logo: "/img/products/dropping-anchor-bolt.jpg",
       },
       {
         p1: "Asbestos-containing products are mainly used for construction and insulation, but the toxic mineral may also be found in many types of consumer goods. There are regulations for working on asbestos-containing materials in India.",
@@ -111,7 +111,7 @@ export const products: any = {
       {
         p1: "In order to meet the emerging requirements of esteemed clients, we are offering a superior range of Industrial Safety Products.",
         name: "Anchor Fastener & Foundation Bolt",
-        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/safety-item.jpg",
+        logo: "/img/products/safety-item.jpg",
       },
       
     ],

@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
 import { products } from "@/contant";
+import Link from "next/link";
 
 function NAVBAR() {
   return (
@@ -35,7 +36,17 @@ function NAVBAR() {
               <NavDropdown title="PRODUCT" id="collapsible-nav-dropdown">
                 {Object.keys(products).map((elt, i) => (
                   <NavDropdown.Item href={`products?product=${elt}`} key={i}  style={{paddingInline:"20px"}}>
-                    {elt}
+                 
+                    <Link
+                      href={{
+                        pathname: "/products",
+                        query: { product: elt },
+                      }}
+                      className="  "
+                      style={{ textDecoration: "none" }}
+                    >
+                         {elt}
+                    </Link>
                   </NavDropdown.Item>
                 ))}
 
