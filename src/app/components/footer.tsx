@@ -1,4 +1,5 @@
 import { products } from "@/contant";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -22,9 +23,18 @@ const Footer = () => {
                 <div className="mb-4 mt-0  mx-auto" />
                 {Object.keys(products).map((elt, i) => (
                   <p key={i}>
-                    <a href={`/products?product=${elt}`} className="text-white">
+                    {/* <a href={`/products?product=${elt}`} className="text-white">
                       {elt}
-                    </a>
+                    </a> */}
+                    <Link
+                      href={{
+                        pathname: "/products",
+                        query: { product: elt },
+                      }}
+                      className=" text-white "
+                    >
+                      {elt}
+                    </Link>
                   </p>
                 ))}
               </div>
@@ -39,19 +49,31 @@ const Footer = () => {
                   </a>
                 </p>
                 <p>
-                  <a href="/aboutus" className="text-white">
+                  {/* <a href="/aboutus" className="text-white">
                     About Us
-                  </a>
+                  </a> */}
+                   <Link
+                      href={{
+                        pathname: "/aboutus",
+                      }}
+                      className=" text-white "
+                    >
+                        About Us
+                    </Link>
                 </p>
                 <p>
-                  <a href="/contactus" className="text-white">
-                    Contact Us
-                  </a>
+                  
+                  <Link
+                      href={{
+                        pathname: "/aboutus",
+                      }}
+                      className=" text-white "
+                    >
+                          Contact Us
+                    </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-white">
-                    Products
-                  </a>
+                 
                 </p>
               </div>
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
