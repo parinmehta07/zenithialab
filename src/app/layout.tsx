@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.css";
 import NAVBAR from "./components/nav-bar";
 import Footer from "./components/footer";
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,14 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <script
+      <Script
         type="text/javascript"
         src="https://pym.nprapps.org/pym.v1.min.js"
-      ></script>
-      <script
+      ></Script>
+      <Script
         type="text/javascript"
         src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"
-      ></script>
+      ></Script>
       </head>
 
       <body className={inter.className}>
