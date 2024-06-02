@@ -1,11 +1,32 @@
+"use client";
+
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export default function ContactUs() {
+  const form = useRef(null);
+
+  const sendEmail = async (e: any) => {
+    e.preventDefault();
+    try {
+      await emailjs.sendForm(
+        "service_dkpeqqi",
+        "template_aa9a94l",
+        form.current || "No message",
+        {
+          publicKey: "zeZhtnbcwKTgUrj7c",
+        }
+      );
+    } catch (error) {
+      console.log("error on form submit", error);
+    }
+  };
   return (
     <>
-      <section id="contact" className="gradient-bg text-white spad">
+      <section id="contact" className="gradient-bg text-white spad mt-4">
         <div className="container">
-          <h3 className="text-center text-uppercase">contact us</h3>
+          <h3 className="text-center text-uppercase pb-4">contact us</h3>
           <p className="text-center w-75 m-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             interdum purus at sem ornare sodales. Morbi leo nulla, pharetra vel
@@ -13,110 +34,128 @@ export default function ContactUs() {
           </p>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-4 my-5">
-              <div className=" border-0">
-                <div className="card-body text-center process-step p-4">
-                  <Image
-                    src={"/img/telephone-outbound-fill.svg"}
-                    className="pb-2"
-                    width={50}
-                    height={50}
-                    alt={""}
-                  />
-                  <h4 className="text-uppercase mb-5">call us</h4>
-                  <p>+8801683615582,+8801750603409</p>
+              <a href="tel:+9322332724" style={{ textDecoration: 'none' }}>
+                <div className="border-0">
+                  <div className="card-body text-center process-step p-4">
+                    <Image
+                      src={"/img/telephone-outbound-fill.svg"}
+                      className="pb-2"
+                      width={50}
+                      height={50}
+                      alt={""}
+                    />
+                    <h4 className="text-uppercase mb-5">call us</h4>
+                    <p>+9322332724</p>
+                    
+                  </div>
                 </div>
-              </div>
+              </a>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4 my-5 ">
+              <a style={{ textDecoration: 'none' }} href="https://www.google.com/maps/dir//Parshwa+Impex+1003,+Levata+64,+Nagdevi+St,+Mohamadali+Road+Mumbai,+Maharashtra+400003/@18.9520682,72.8335811,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3be7cf075271f35f:0xaef4510db74de952">
+                <div className="border-0">
+                  <div className="card-body text-center process-step p-4">
+                    <Image
+                      className="pb-2"
+                      src="/img/house.svg"
+                      width={50}
+                      height={50}
+                      alt={""}
+                    />
+                    <h4 className="text-uppercase mb-1">Address</h4>
+                    <p>
+                      Parshwa Impex, 1003, Levata, 64, Nagdevi St, Mohamadali
+                      Road, Mumbai, Maharashtra 400003
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4 my-5">
-              <div className=" border-0">
-                <div className="card-body text-center process-step p-4 ">
-                  <Image
-                    className="pb-2"
-                    src="/img/house.svg"
-                    width={50}
-                    height={50}
-                    alt={""}
-                  />
-                  <h4 className="text-uppercase mb-5">Address</h4>
-                  <p>http://al.a.noman1416@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4 my-5">
-              <div className=" border-0">
-                <div className="card-body text-center process-step p-4">
-                  <Image
-                    src="/img/envelope.svg"
-                    className="pb-2"
-                    width={50}
-                    height={50}
-                    alt={""}
-                  />
-                  <h4 className="text-uppercase mb-5">email</h4>
-                  <p>http://al.a.noman1416@gmail.com</p>
-                </div>
-              </div>
+              <a href="mailto:parshwaimpex1@gmail.com" style={{ textDecoration: 'none' }}>
+                  <div className="border-0">
+                    <div className="card-body text-center process-step p-4">
+                      <Image
+                            src="/img/envelope.svg"
+                            className="pb-2"
+                        width={50}
+                        height={50}
+                        alt={""}
+                      />
+                      <h4 className="text-uppercase mb-5">Mail</h4>
+                      <p>parshwaimpex1@gmail.com</p>
+                    </div>
+                  </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <div className="container contact-form">
+      <div className="container contact-form w-100">
         <div className="contact-image">
           <img
             src="https://image.ibb.co/kUagtU/rocket_contact.png"
             alt="rocket_contact"
           />
         </div>
-        <form method="post">
-          <h3>Drop Us a Message</h3>
+        <form
+          method="post"
+          ref={form}
+          onSubmit={sendEmail}
+          className="bg-light  rounded shadow-sm"
+        >
+          <h3 className="text-center mb-4">Drop Us a Message</h3>
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-6 mb-3">
               <div className="form-group">
                 <input
                   type="text"
-                  name="txtName"
-                  className="form-control"
+                  name="from_name"
+                  className="form-control border border-dark"
                   placeholder="Your Name *"
-                  value=""
+                  required
                 />
               </div>
+            </div>
+            <div className="col-md-6 mb-3">
               <div className="form-group">
                 <input
-                  type="text"
-                  name="txtEmail"
-                  className="form-control"
+                  type="email"
+                  name="user_email"
+                  className="form-control border border-dark"
                   placeholder="Your Email *"
-                  value=""
+                  required
                 />
               </div>
+            </div>
+            <div className="col-md-12 mb-3">
               <div className="form-group">
                 <input
                   type="text"
-                  name="txtPhone"
-                  className="form-control"
+                  name="message"
+                  className="form-control border border-dark"
                   placeholder="Your Phone Number *"
-                  value=""
+                  required
                 />
               </div>
-            <div className="col-md-12">
+            </div>
+            <div className="col-md-12 mb-3">
               <div className="form-group">
                 <textarea
                   name="txtMsg"
-                  className="form-control"
+                  className="form-control border border-dark"
                   placeholder="Your Message *"
+                  required
                 ></textarea>
               </div>
             </div>
-              <div className="form-group d-flex justify-content-center contact-image">
-              <button className="site-btn sb-gradients w-100 mt-4 ">
-                      Send message
-                    </button>
-              </div>
+            <div className="col-md-12 text-center">
+              <button className="btn btn-primary w-100 py-2">Send Message</button>
             </div>
           </div>
         </form>
       </div>
-     
+
       {/* <div className=" pt-4">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5326811216946!2d72.8335811!3d18.9520682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf075271f35f%3A0xaef4510db74de952!2sParshwa%20Impex!5e0!3m2!1sen!2sin!4v1714233108956!5m2!1sen!2sin"

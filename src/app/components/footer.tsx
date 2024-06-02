@@ -1,3 +1,5 @@
+import { products } from "@/contant";
+
 const Footer = () => {
   return (
     <>
@@ -6,75 +8,79 @@ const Footer = () => {
           <div className="container text-center text-md-start mt-5 footer p-4">
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold text-white">Parshwa Impex</h6>
-                <hr className="mb-4 mt-0 d-inline-block mx-auto" />
+                <h6 className="text-uppercase fw-bold text-white">
+                  Parshwa Impex
+                </h6>
+                <div className="mb-4 mt-0  mx-auto" />
                 <p>
-                Leading Ball Bearing Supplier Powering Industry and Driving Performance.
+                  Leading Ball Bearing Supplier Powering Industry and Driving
+                  Performance.
                 </p>
               </div>
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
                 <h6 className="text-uppercase fw-bold text-white">Products</h6>
-                <hr className="mb-4 mt-0 d-inline-block mx-auto" />
-                <p>
-                  <a href="#!" className="text-white">
-                    MDBootstrap
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    MDWordPress
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    BrandFlow
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Bootstrap Angular
-                  </a>
-                </p>
+                <div className="mb-4 mt-0  mx-auto" />
+                {Object.keys(products).map((elt, i) => (
+                  <p key={i}>
+                    <a href={`/products?product=${elt}`} className="text-white">
+                      {elt}
+                    </a>
+                  </p>
+                ))}
               </div>
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold text-white">Useful links</h6>
+                <h6 className="text-uppercase fw-bold text-white">
+                  Useful links
+                </h6>
                 <hr className="mb-4 mt-0 d-inline-block mx-auto" />
                 <p>
                   <a href="#!" className="text-white">
-                    Your Account
+                   Home
+                  </a>
+                </p>
+                <p>
+                  <a href="/aboutus" className="text-white">
+                    About Us
+                  </a>
+                </p>
+                <p>
+                  <a href="/contactus" className="text-white">
+                    Contact Us
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-white">
-                    Become an Affiliate
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Shipping Rates
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Help
+                    Products
                   </a>
                 </p>
               </div>
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold text-white">Contact</h6>
-                <hr className="mb-4 mt-0 d-inline-block mx-auto" />
-                <p>
-                  <i className="fas fa-home mr-3"></i> New York, NY 10012, US
-                </p>
-                <p>
-                  <i className="fas fa-envelope mr-3"></i> info@example.com
-                </p>
-                <p>
-                  <i className="fas fa-phone mr-3"></i> + 01 234 567 88
-                </p>
-                <p>
-                  <i className="fas fa-print mr-3"></i> + 01 234 567 89
-                </p>
+                <div className="mb-4 mt-0  mx-auto" />
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.google.com/maps/dir//Parshwa+Impex+1003,+Levata+64,+Nagdevi+St,+Mohamadali+Road+Mumbai,+Maharashtra+400003/@18.9520682,72.8335811,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3be7cf075271f35f:0xaef4510db74de952"
+                >
+                  Parshwa Impex, 1003, Levata, 64, Nagdevi St, Mohamadali Road,
+                  Mumbai, Maharashtra 400003
+                </a>
+                <br/>
+                <div className="pt-4">
+                <a
+                  href="mailto:parshwaimpex1@gmail.com"
+                >
+                  <i className="fas fa-envelope mr-3"></i>{" "}
+                  parshwaimpex1@gmail.com
+                </a>
+                </div>
+                <div className="pt-4">
+                <a href="tel:+9322332724" className="pt-4">
+                  <i className="fas fa-phone mr-3"></i> <p>9322332724</p>
+                </a>
+                </div>
+                <a href="tel:+9892402162">
+                  <i className="fas fa-print mr-3"></i>  <p>9892402162</p>
+                </a>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import ContactUs from "./components/contant-us";
@@ -68,7 +69,7 @@ export default function Home() {
               {/* <h5>
               Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
               </h5> */}
-              <a href="/contactus" className="site-btn   sbg-line ">
+              <a href="/contactus" className="site-btn   sbg-line " style={{ textDecoration: "none"}}>
                 Get Started
               </a>
             </div>

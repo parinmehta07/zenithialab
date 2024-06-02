@@ -39,7 +39,7 @@ const About = () => {
   return (
     <div>
       <main className={styles.main}>
-        <div className="  text-white py-5 gradient-bg">
+        <div className="  text-white py-5 gradient-bg mt-4">
           <div className="row">
             <div className="col-12 text-center">
               <h2>About Us</h2>

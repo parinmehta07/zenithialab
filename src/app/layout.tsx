@@ -1,33 +1,44 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import 'bootstrap/dist/css/bootstrap.css';
-import NAVBAR from './components/nav-bar';
-import Footer from './components/footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.css";
+import NAVBAR from "./components/nav-bar";
+import Footer from "./components/footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'zenithialabs',
-  description: 'zenithialabs Crypto Trading',
-}
+  title: "zenithialabs",
+  description: "zenithialabs Crypto Trading",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
+      <head>
+      <script
+        type="text/javascript"
+        src="https://pym.nprapps.org/pym.v1.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"
+      ></script>
+      </head>
+
       <body className={inter.className}>
-      <header className="header-section ">
-        <NAVBAR />
-      </header>
+        <header className="header-section ">
+          <NAVBAR />
+        </header>
 
         {children}
         <div>
           <Footer />
-        {/* <footer className="footer-section ">
+          {/* <footer className="footer-section ">
         <div className="row ">
           <div className="footer-bottom">
             <div className="row justify-content-center">
@@ -62,8 +73,7 @@ export default function RootLayout({
         </div>
       </footer> */}
         </div>
-        </body>
-      
+      </body>
     </html>
-  )
+  );
 }

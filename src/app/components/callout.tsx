@@ -18,7 +18,7 @@ function CALLOUT() {
                <a
                 href="#contact-us"
                 className="site-btn  sbg-line mt-5 "
-                style={{ textDecoration: "none",marginInline:"8px",}}
+                style={{ textDecoration: "none",marginInline:"8px",backgroundColor:"#1877F2",color:"white"}}
               >
                 Discover more
               </a>
@@ -27,7 +27,7 @@ function CALLOUT() {
              <a
                 href="#contact-us"
                 className="site-btn  sbg-line mt-5"
-                style={{ textDecoration: "none",marginInline:"8px"  }}
+                style={{ textDecoration: "none",marginInline:"8px" ,backgroundColor:"#1877F2",color:"white" }}
               >
                 Contact us
               </a>
