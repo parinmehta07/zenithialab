@@ -28,9 +28,8 @@ export default function ContactUs() {
         <div className="container">
           <h3 className="text-center text-uppercase pb-4">contact us</h3>
           <p className="text-center w-75 m-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            interdum purus at sem ornare sodales. Morbi leo nulla, pharetra vel
-            felis nec, ullamcorper condimentum quam.
+          Whether you have questions, feedback, or need assistance, our team is ready to support you. Reach out to us through any of the methods below, and we'll get back to you as soon as possible.
+
           </p>
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-4 my-5">
