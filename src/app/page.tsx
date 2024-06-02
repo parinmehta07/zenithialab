@@ -74,13 +74,16 @@ export default function Home() {
               {/* <h5>
               Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
               </h5> */}
-              <a
-                href="/contactus"
+              <Link
+                // href="/contactus"
+                href={{
+                  pathname: "/contactus",
+                }}
                 className="site-btn   sbg-line "
                 style={{ textDecoration: "none" }}
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -30,13 +30,31 @@ function NAVBAR() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav text-white">
-            <Nav className="text-white justify-content-end"  style={{width:"75%",}}>
-              <Nav.Link href="/" style={{paddingInline:"20px"}}>HOME</Nav.Link>
-              <Nav.Link href="/aboutus" style={{paddingInline:"20px"}}>ABOUT US</Nav.Link>
+            <Nav
+              className="text-white justify-content-end"
+              style={{ width: "75%" }}
+            >
+              <Nav.Link href="/" style={{ paddingInline: "20px" }}>
+                HOME
+              </Nav.Link>
+              <Nav.Link href="/aboutus" style={{ paddingInline: "20px",textDecoration:"none" }} >
+            
+                <Link
+                  href={{
+                    pathname: "/aboutus",
+                  }}
+                  style={{ textDecoration: "none" }}
+                >
+                   ABOUT US
+                </Link>
+              </Nav.Link>
               <NavDropdown title="PRODUCT" id="collapsible-nav-dropdown">
                 {Object.keys(products).map((elt, i) => (
-                  <NavDropdown.Item href={`products?product=${elt}`} key={i}  style={{paddingInline:"20px"}}>
-                 
+                  <NavDropdown.Item
+                    href={`products?product=${elt}`}
+                    key={i}
+                    style={{ paddingInline: "20px" }}
+                  >
                     <Link
                       href={{
                         pathname: "/products",
@@ -45,7 +63,7 @@ function NAVBAR() {
                       className="  "
                       style={{ textDecoration: "none" }}
                     >
-                         {elt}
+                      {elt}
                     </Link>
                   </NavDropdown.Item>
                 ))}
@@ -60,9 +78,16 @@ function NAVBAR() {
               </NavDropdown.Item> */}
               </NavDropdown>
             </Nav>
-            <Nav className="text-white" style={{paddingInline:"20px"}}> 
+            <Nav className="text-white" style={{ paddingInline: "20px" }}>
               <Nav.Link eventKey={2} href="/contactus">
-                CONTACT US
+                <Link
+                  href={{
+                    pathname: "/contactus",
+                  }}
+                  style={{ textDecoration: "none" }}
+                >
+                  CONTACT US
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
