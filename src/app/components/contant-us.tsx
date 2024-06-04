@@ -44,8 +44,8 @@ const ContactUs = ()=> {
                       alt={""}
                     />
                     <h4 className="text-uppercase mb-5">call us</h4>
-                    <p  style={{"fontWeight": 600}}>+919322332724</p>
-                    <p  style={{"fontWeight": 600}}>+919892402162</p>
+                    <p  style={{"fontWeight": 600}}></p>
+                    <h5 className="p-2 pt-4" style={{"fontWeight": 600}}>+919892402162</h5>
                   </div>
                 </div>
               </a>
@@ -81,7 +81,7 @@ const ContactUs = ()=> {
                         height={50}
                         alt={""}
                       />
-                      <h4 className="text-uppercase mb-5">Mail</h4>
+                      <h4 className="text-uppercase mb-4">Mail</h4>
                       <p className="font-weight-bold" style={{"fontWeight": 600}}>parshwaimpex1@gmail.com</p>
 
                     </div>
