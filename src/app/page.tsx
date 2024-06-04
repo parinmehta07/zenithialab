@@ -72,7 +72,7 @@ export default function Home() {
             <div className="col-lg-12 offset-lg-12 about-text">
               <h2>Ready to Partner with Us</h2>
               {/* <h5>
-              Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
+              Contact us today to discuss your specific requirements and how PARSHWA IMPEX can become your one-stop shop for all your industrial supply needs.
               </h5> */}
               <Link
                 // href="/contactus"
@@ -123,7 +123,7 @@ export default function Home() {
       <section className=" spad">
         <div className="p-2">
           <div className="section-title text-center">
-            <h2>PRODUCTS WE OFFERS AT Parshwa Impex</h2>
+            <h2>PRODUCTS WE OFFERS AT <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span></h2>
           </div>
           <div className="row">
             {products.map((elt, i) => (

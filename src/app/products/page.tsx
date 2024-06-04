@@ -136,7 +136,6 @@ const Product = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 about-text">
-                  <h2>Anchor Fastener & Foundation Bolt</h2>
                   <h5>
                     In order to meet the emerging requirements of esteemed
                     clients, we are offering a superior range of Industrial

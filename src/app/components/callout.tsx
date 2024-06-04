@@ -10,15 +10,15 @@ function CALLOUT() {
       <div className="caption">
         <h1 style={{color:"White"}}> Since 1990</h1>
         <h2 style={{ fontSize: "32px", marginBottom: "20px",color:"White" }}>
-              We are one of the leading Stockiest <br />
-              and Suppliers for Bearings for all Types of Industries.
+        Leading Ball Bearing Supplier Powering Industry<br />
+              and Driving Performance.
             </h2>
             <div style={{ display: "flex", justifyContent: "center",paddingTop:"48px" }}>
              <div className="text-white ">
                <a
                 href="#contact-us"
                 className="site-btn  sbg-line mt-5 "
-                style={{ textDecoration: "none",marginInline:"8px",backgroundColor:"#1877F2",color:"white"}}
+                style={{ textDecoration: "none",marginInline:"8px",backgroundColor:"#1877F2",color:"white",borderColor:"white",borderRadius:"500px"}}
               >
                 Discover more
               </a>
@@ -27,7 +27,7 @@ function CALLOUT() {
              <a
                 href="#contact-us"
                 className="site-btn  sbg-line mt-5"
-                style={{ textDecoration: "none",marginInline:"8px" ,backgroundColor:"#1877F2",color:"white" }}
+                style={{ textDecoration: "none",marginInline:"8px" ,backgroundColor:"#1877F2",color:"white" ,borderColor:"white",borderRadius:"500px"}}
               >
                 Contact us
               </a>

@@ -58,12 +58,12 @@ const About = () => {
               />
             </div>
             <div className="col-lg-6  about-text  col-sm-12 p-4">
-              <h2 className="text-center text-underline">About: Parshwa Impex</h2>
+              <h2 className="text-center text-underline"> <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span></h2>
               <h5>
-                <span className="font-weight-bold">Parshwa Impex </span> offers wordclass products and services Since 1992
+                <span className="font-weight-bold" style={{"fontWeight": 600}}>PARSHWA IMPEX </span> offers wordclass products and services Since 1992
               </h5>
               <p>
-                Our company, Parshwa Impex, was established in 1992. We have
+                Our company,  <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>, was established in 1992. We have
                 made a name for ourselves as one of the top suppliers in India.
                 Our company is a leading seller of various types of bearings and
                 industrial products. We take pride in introducing ourselves as
@@ -100,7 +100,7 @@ const About = () => {
         <section className=" spad">
           <div className="container">
             <div className="section-title text-center">
-              <h2>Why Choose Parshwa Impex</h2>
+              <h2>Why Choose PARSHWA IMPEX</h2>
             </div>
             <div className="row">
               {data.map((elt, i) => (
@@ -129,7 +129,7 @@ const About = () => {
             <div className="col-lg-12 offset-lg-12 about-text">
               <h2>Ready to Partner with Us</h2>
               <h5>
-              Contact us today to discuss your specific requirements and how Parshwa Impex can become your one-stop shop for all your industrial supply needs.
+              Contact us today to discuss your specific requirements and how <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>can become your one-stop shop for all your industrial supply needs.
               </h5>
             </div>
           </div>

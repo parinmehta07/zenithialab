@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold text-white">
-                  Parshwa Impex
+                 bolder
                 </h6>
                 <div className="mb-4 mt-0  mx-auto" />
                 <p>
@@ -83,7 +83,7 @@ const Footer = () => {
                   style={{ textDecoration: "none" }}
                   href="https://www.google.com/maps/dir//Parshwa+Impex+1003,+Levata+64,+Nagdevi+St,+Mohamadali+Road+Mumbai,+Maharashtra+400003/@18.9520682,72.8335811,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3be7cf075271f35f:0xaef4510db74de952"
                 >
-                  Parshwa Impex, 1003, Levata, 64, Nagdevi St, Mohamadali Road,
+                   <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>, 1003, Levata, 64, Nagdevi St, Mohamadali Road,
                   Mumbai, Maharashtra 400003
                 </a>
                 <br/>
@@ -114,7 +114,7 @@ const Footer = () => {
             © 2024 Copyright:
             <a className="text-white" href="/">
               {" "}
-              Parshwa Impex
+              <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>
             </a>
           </div>
         </section>

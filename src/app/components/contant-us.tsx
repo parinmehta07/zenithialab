@@ -63,7 +63,7 @@ const ContactUs = ()=> {
                     />
                     <h4 className="text-uppercase mb-1">Address</h4>
                     <p  style={{"fontWeight": 600}}>
-                      Parshwa Impex, 1003, Levata, 64, Nagdevi St, Mohamadali
+                    <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>,1003, Levata, 64, Nagdevi St, Mohamadali
                       Road, Mumbai, Maharashtra 400003
                     </p>
                   </div>

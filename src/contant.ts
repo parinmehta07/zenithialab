@@ -104,6 +104,51 @@ export const products: any = {
         name: "Asbestos Items",
         logo: "https://dkcbearings.in/wp-content/uploads/2020/08/asbestos-items-300x300.jpg",
       },
+      {
+        p1: "Riding on unfathomable volumes of industrial expertise, we are providing a broad array of cutting tools, filter and spring as per our client requirements.",
+        name: "Filter, Spring and Cutting Tools",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/spring-cutting-tool.jpg",
+      },
+      {
+        p1: "PARSHWA IMPEX has made a name for itself in the list of top suppliers in India. Our offered ranges of this Hot Dip Galvanized Bolt are made in accordance with various industrial standards to offer high functionality. We offer these products and export them in a wide range at market leading rate. Our range of these is reckoned for their efficient performance, durability, and extended life. These are widely used while installing the fence to secure numerous fittings that are applicable in Transmission Lines, automotive and construction industries. We also offer customized products as per our customers required specifications.",
+        name: "Hot Dip Galvanized Bolt",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/bolt-nut-washer.jpg",
+      },
+      {
+        p1: "Riding on unfathomable volumes of industrial expertise, we are providing a broad array of cutting tools, filter and spring as per our client requirements.",
+        name: "HT bolt",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/HT-Bolt.jpg",
+      },
+      {
+        p1: "Our expertise in the industry has enabled us to become a leading Manufacturer and Supplier of a wide range of Rubber Products. We offer Rubber Diaphragms, Rubber Coupling, Rubber Bellows and Rubber Gaskets, and many more. These products are manufactured using finest quality rubber and sophisticated technology, our range is developed as per the defined industry standards. These are highly acknowledged in the market due to their high strength, excellent performance, reliability, and longer service life.",
+        name: "Hydraulic Seal Kit",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/hydraulic-seal-500x500-1.jpg",
+      }, {
+        p1: "We are actively involved in providing an extensive range of Industrial Valve   Due to high demand, professionals develop these products in varied specifications that meet on the client's demand.",
+        name: "Industrial Valve",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/09/Industrial-Valve.jpg",
+      }, {
+        p1: "We are supplying a wide range of Micrometers & Torque Multipliers. Manufactured with the support of experienced engineers at our vendors’ unit, these products can be customized as per the detailed specifications of our patrons. Furthermore, we conduct various tests to measure the quality of each product at our vendor's unit prior to approving it to be delivered to the clients.",
+        name: "Measuring Instruments",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/measuring-instruments.jpg",
+      }, {
+        name: "Ms Bolt With Nut",
+        p1: "We are offering a wide range of MS Bolt. These M.S. Bolt are manufactured from quality raw materials and are quality tested on various parameters before they are delivered to our clients. We also meet customized requirement for our client's benefit.",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/MS-Bolt.jpg",
+      }, {
+        name: "Rubber Seal",
+        p1: "We are engaged in offering high-quality Rubber Seal to our esteemed clients. It is the mechanical seal used for rotating and static force resist deformation under pressure, thermal, wear and lubricity. The product is manufactured under the supervision of our quality experts. Besides these, the oil seal we offer is available with various specifications at an affordable price range that makes us one of the most trustworthy firms.",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/rubber-oil-seal.jpg",
+      }, {
+        p1: "We are a PARSHWA IMPEX & Company engaged in manufacturing the finest quality Rubber Moulded Parts. These parts are designed under the strict supervision of our experts using advanced tools and equipment. Our products are manufactured making use of high-class raw-material procured from the authorized vendors in the business. To cater to the needs of our valued clients, we offer these products in various shapes and sizes items as per requirements.",
+        name: "Rubber Molded",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/rubber-molded.jpg",
+      },
+      {
+        p1: "We have carved a niche amongst the most dominant names in this domain, involved in providing a superior quality range of Plummer Block Sleeve.",
+        name: "Plummer Block And Sleeve",
+        logo: "https://dkcbearings.in/wp-content/uploads/2020/08/plummer-block-and-sleeve.jpg",
+      },
     ],
   },
   "Safety Equipment": {
