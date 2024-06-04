@@ -35,18 +35,21 @@ const ContactUs = ()=> {
             <div className="col-sm-12 col-md-6 col-lg-4 my-5">
               <a href="tel:9322332724" style={{ textDecoration: 'none' }}>
                 <div className="border-0">
-                  <div className="card-body text-center process-step ">
+                  <div className="card-body text-center process-step pb-2">
                     <Image
                       src={"/img/telephone-outbound-fill.svg"}
-                      className="pb-2 pt-2"
+                      className=" pt-2"
                       width={50}
                       height={50}
                       alt={""}
                     />
-                     
-                    <h4 className="text-uppercase mb-5">call us</h4>
+                     <br></br>
+                     <br></br>
+                     <br></br>
+
+                    <h4 className="text-uppercase ">call us</h4>
                     <p  style={{"fontWeight": 600}}></p>
-                    <h5 className="font-weight-bold pb-4" style={{"fontWeight": 600}}>+919892402162</h5>
+                    <h5 className="font-weight-bold " style={{"fontWeight": 600}}>+919892402162</h5>
                   </div>
                 </div>
               </a>
@@ -54,18 +57,18 @@ const ContactUs = ()=> {
             <div className="col-sm-12 col-md-6 col-lg-4 my-5 ">
               <a style={{ textDecoration: 'none' }} href="https://www.google.com/maps/dir//Parshwa+Impex+1003,+Levata+64,+Nagdevi+St,+Mohamadali+Road+Mumbai,+Maharashtra+400003/@18.9520682,72.8335811,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3be7cf075271f35f:0xaef4510db74de952">
                 <div className="border-0">
-                  <div className="card-body text-center process-step p-4">
+                  <div className="card-body text-center process-step pb-2">
                     <Image
-                      className="pb-2"
+                      className=""
                       src="/img/house.svg"
                       width={50}
                       height={50}
                       alt={""}
                     />
-                    <h4 className="text-uppercase mb-1">Address</h4>
+                    <h4 className="text-uppercase ">Address</h4>
                     <p  style={{"fontWeight": 600}}>
-                    <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>,1003, Levata, 64, Nagdevi St, Mohamadali
-                      Road, Mumbai, Maharashtra 400003
+                    <span style={{fontWeight:"bolder"}} className=""> PARSHWA IMPEX</span>,1003, Levata, 64, Nagdevi St, Mohamadali
+                      Road,<br/> Mumbai, Maharashtra 400003
                     </p>
                   </div>
                 </div>
