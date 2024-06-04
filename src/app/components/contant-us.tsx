@@ -131,8 +131,8 @@ const ContactUs = ()=> {
             <div className="col-md-12 mb-3">
               <div className="form-group">
                 <input
-                  type="text"
-                  name="message"
+                  type="number"
+                  name="phone"
                   className="form-control border border-dark"
                   placeholder="Your Phone Number *"
                   required
@@ -142,7 +142,7 @@ const ContactUs = ()=> {
             <div className="col-md-12 mb-3">
               <div className="form-group">
                 <textarea
-                  name="txtMsg"
+                  name="message"
                   className="form-control border border-dark"
                   placeholder="Your Message *"
                   required
