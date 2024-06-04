@@ -43,9 +43,10 @@ const ContactUs = ()=> {
                       height={50}
                       alt={""}
                     />
+                     
                     <h4 className="text-uppercase mb-5">call us</h4>
                     <p  style={{"fontWeight": 600}}></p>
-                    <h5 className="p-2 pt-4" style={{"fontWeight": 600}}>+919892402162</h5>
+                    <h5 className="font-weight-bold pb-4" style={{"fontWeight": 600}}>+919892402162</h5>
                   </div>
                 </div>
               </a>
