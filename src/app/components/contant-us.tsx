@@ -83,7 +83,7 @@ const ContactUs = ()=> {
                         alt={""}
                       />
                       <h4 className="text-uppercase mb-4">Mail</h4>
-                      <p className="font-weight-bold" style={{"fontWeight": 600}}>parshwaimpex1@gmail.com</p>
+                      <h5 className="font-weight-bold" style={{"fontWeight": 600}}>parshwaimpex1@gmail.com</h5>
 
                     </div>
                   </div>
