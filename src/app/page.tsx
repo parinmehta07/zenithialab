@@ -95,8 +95,7 @@ export default function Home() {
         <div className="spad text-white">
           <div className="section-title text-center">
             <h2>
-              Leading Ball Bearing Supplier Powering Industry and Driving
-              Performance.
+            Nation Runs on Industries. Industries Run because of Us.
             </h2>
             <p>
               We are an established industrial distributor with 30+ years of

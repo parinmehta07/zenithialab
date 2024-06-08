@@ -22,10 +22,10 @@ function NAVBAR() {
           <Navbar.Brand href="/">
             {" "}
             <Image
-              src="/img/Logoforwebsite.png"
+              src="/img/Copy of Final logo for website.png"
               alt="#"
-              width={61}
-              height={47}
+              width={89}
+              height={77}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -6,11 +6,17 @@ const About = () => {
   const feature: any = [
     {
       title: "Extensive Bearing Selection",
+      logo:"/img/Brands.png",
+      width:200,
+      height:460,
       text: " We carry a comprehensive line of ball, roller, taper roller, and needle roller bearings from renowned brands like FAG, RHP, SKF, NTN, Timken, ZKL, IKO, and INA",
     },
     {
       title: "Beyond Bearing",
-      text: "Our commitment goes beyond bearings. We offer a diverse selection of Industrial products ",
+      logo:"https://evolution.skf.com/wp-content/uploads/sites/5/2020/08/gears-top-image-1920x915.jpg",
+      width:180,
+      height:560,
+      text: "Our unwavering commitment goes beyond just bearings. We proudly offer a diverse and extensive selection of top-quality Industrial products ",
     },
   ];
 
@@ -63,7 +69,7 @@ const About = () => {
                 <span className="font-weight-bold" style={{"fontWeight": 600}}>PARSHWA IMPEX </span> offers wordclass products and services Since 1992
               </h5>
               <p>
-                Our company,  <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>, was established in 1992. We have
+                Our company,  <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>, was established in 1990. We have
                 made a name for ourselves as one of the top suppliers in India.
                 Our company is a leading seller of various types of bearings and
                 industrial products. We take pride in introducing ourselves as
@@ -83,12 +89,15 @@ const About = () => {
         >
           <div className="spad text-white">
             <div className="section-title text-center">
-              <h2>Business Goals</h2>
+              <h2>Expertise</h2>
             </div>
             <div className="row ">
               {feature.map((elt: any, i: number) => (
                 <div className=" col-md-6  process p-4" key={i}>
-                  <div className="process-step " style={{ padding: "8%" }}>
+                  <div className="process-step " style={{ padding: "4%" }}>
+                  <figure className="process-icon">
+                      <Image src={elt.logo} alt="#" width={elt.width} height={57} />
+                    </figure>
                     <h4>{elt.title}</h4>
                     <p>{elt.text} </p>
                   </div>
