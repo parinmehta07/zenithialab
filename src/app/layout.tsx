@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import NAVBAR from "./components/nav-bar";
 import Footer from "./components/footer";
 import Script from 'next/script'
+import TOPBAR from "./components/top-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,10 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <header className="header-section ">
+         <div className="">
+         {/* <TOPBAR /> */}
+         </div>
+        <header className="header-section  ">
           <NAVBAR />
         </header>
 

@@ -66,7 +66,7 @@ const About = () => {
             <div className="col-lg-6  about-text  col-sm-12 p-4">
               <h2 className="text-center text-underline"> <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span></h2>
               <h5>
-                <span className="font-weight-bold" style={{"fontWeight": 600}}>PARSHWA IMPEX </span> offers wordclass products and services Since 1992
+                <span className="font-weight-bold" style={{"fontWeight": 600}}>PARSHWA IMPEX </span> offers wordclass products and services Since 1990
               </h5>
               <p>
                 Our company,  <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>, was established in 1990. We have
