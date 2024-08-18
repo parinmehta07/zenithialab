@@ -66,7 +66,7 @@ const About = () => {
             <div className="col-lg-6  about-text  col-sm-12 p-4">
               <h2 className="text-center text-underline"> <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span></h2>
               <h5>
-                <span className="font-weight-bold" style={{"fontWeight": 600}}>PARSHWA IMPEX </span> offers wordclass products and services Since 1990
+                <span className="font-weight-bold" style={{"fontWeight": 600}}>PARSHWA IMPEX </span> offers worldclass products and services Since 1990
               </h5>
               <p>
                 Our company,  <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>, was established in 1990. We have
@@ -138,7 +138,7 @@ const About = () => {
             <div className="col-lg-12 offset-lg-12 about-text">
               <h2>Ready to Partner with Us</h2>
               <h5>
-              Contact us today to discuss your specific requirements and how <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span>can become your one-stop shop for all your industrial supply needs.
+              Contact us today to discuss your specific requirements and how <span style={{fontWeight:"bolder"}}> PARSHWA IMPEX</span> can become your one-stop shop for all your industrial supply needs.
               </h5>
             </div>
           </div>
